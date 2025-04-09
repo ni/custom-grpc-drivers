@@ -13,6 +13,9 @@
 		<Item Name="NI DAQmx_server" Type="Folder">
 			<Item Name="NI DAQmx_server.lvlib" Type="Library" URL="../NI DAQmx_server/NI DAQmx_server.lvlib"/>
 		</Item>
+		<Item Name="NI DAQmx_wrapper" Type="Folder">
+			<Item Name="NI DAQmx_wrapper.lvlib" Type="Library" URL="../NI DAQmx_wrapper/NI DAQmx_wrapper.lvlib"/>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
