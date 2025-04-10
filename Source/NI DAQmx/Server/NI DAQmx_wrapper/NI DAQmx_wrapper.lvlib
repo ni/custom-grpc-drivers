@@ -4,4 +4,26 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="DAQmx Functions" Type="Folder">
+		<Item Name="Create Task Wrapper.vi" Type="VI" URL="../Create Task Wrapper.vi"/>
+		<Item Name="Create DO Channel Wrapper.vi" Type="VI" URL="../Create DO Channel Wrapper.vi"/>
+		<Item Name="Create CI Frequency Channel Wrapper.vi" Type="VI" URL="../Create CI Frequency Channel Wrapper.vi"/>
+		<Item Name="Write Digital Lines Wrapper.vi" Type="VI" URL="../Write Digital Lines Wrapper.vi"/>
+		<Item Name="Read Counter Double Wrapper.vi" Type="VI" URL="../Read Counter Double Wrapper.vi"/>
+		<Item Name="Implicit Timing Wrapper.vi" Type="VI" URL="../Implicit Timing Wrapper.vi"/>
+		<Item Name="Start Task Wrapper.vi" Type="VI" URL="../Start Task Wrapper.vi"/>
+		<Item Name="Stop Task Wrapper.vi" Type="VI" URL="../Stop Task Wrapper.vi"/>
+		<Item Name="Get Task Attribute Wrapper.vi" Type="VI" URL="../Get Task Attribute Wrapper.vi"/>
+		<Item Name="Get Channel Attribute String Wrapper.vi" Type="VI" URL="../Get Channel Attribute String Wrapper.vi"/>
+		<Item Name="Get Channel Attribute Double Wrapper.vi" Type="VI" URL="../Get Channel Attribute Double Wrapper.vi"/>
+		<Item Name="Set Channel Attribute String Wrapper.vi" Type="VI" URL="../Set Channel Attribute String Wrapper.vi"/>
+		<Item Name="Set Channel Attribute Double Wrapper.vi" Type="VI" URL="../Set Channel Attribute Double Wrapper.vi"/>
+	</Item>
+	<Item Name="Helpers" Type="Folder">
+		<Item Name="Log gRPC Error.vi" Type="VI" URL="../Log gRPC Error.vi"/>
+		<Item Name="Fetch Task from Map.vi" Type="VI" URL="../Fetch Task from Map.vi"/>
+		<Item Name="String to Task.vi" Type="VI" URL="../String to Task.vi"/>
+		<Item Name="Task to String.vi" Type="VI" URL="../Task to String.vi"/>
+	</Item>
 </Library>
