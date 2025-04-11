@@ -1,29 +1,40 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="21008000">
-	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!(]!!!*Q(C=\&gt;7R=2MR%!81N=?"5X&lt;A91M&lt;/W-,&lt;'&amp;&lt;9+K1,7Q,&lt;)%N&lt;!NMA3X)DW?-RJ(JQ"I\%%Z,(@`BA#==ZB3RN;]28_,V7@P_W`:R`&gt;HV*SU_WE@\N_XF[3:^^TX\+2YP)D7K6;G-RV3P)R`ZS%=_]J'XP/5N&lt;XH,7V\SEJ?]Z#5P?=J4HP+5JTTFWS%0?=B$DD1G(R/.1==!IT.+D)`B':\B'2Z@9XC':XC':XBUC?%:HO%:HO&amp;R7QT0]!T0]!S0I4&lt;*&lt;)?=:XA-(]X40-X40-VDSGC?"GC4N9(&lt;)"D2,L;4ZGG?ZH%;T&gt;-]T&gt;-]T?.S.%`T.%`T.)^&lt;NF8J4@-YZ$S'C?)JHO)JHO)R&gt;"20]220]230[;*YCK=ASI2F=)1I.Z5/Z5PR&amp;)^@54T&amp;5TT&amp;5TQO&lt;5_INJ6Z;"[(H#&gt;ZEC&gt;ZEC&gt;Z$"(*ETT*ETT*9^B)HO2*HO2*(F.&amp;]C20]C2)GN4UE1:,.[:/+5A?0^NOS?UJ^3&lt;*\9B9GT@7JISVW7*NIFC&lt;)^:$D`5Q9TWE7)M@;V&amp;D,6;M29DVR]6#R],%GC47T9_/=@&gt;Z5V&gt;V57&gt;V5E&gt;V5(OV?^T[FTP?\`?YX7ZRP6\D=LH%_8S/U_E5R_-R$I&gt;$\0@\W/VW&lt;[_"&lt;Y[X&amp;],0^^+,]T_J&gt;`J@_B_]'_.T`$KO.@I"O[^NF!!!!!!</Property>
+	<Property Name="EndevoGOOP_ColorFrame" Type="UInt">0</Property>
+	<Property Name="EndevoGOOP_ColorHeader" Type="UInt">16774233</Property>
+	<Property Name="EndevoGOOP_ColorPrivate" Type="UInt">16777215</Property>
+	<Property Name="EndevoGOOP_ColorPublic" Type="UInt">16448250</Property>
+	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">1</Property>
+	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">0</Property>
+	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
+	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)^!!!*Q(C=\&gt;7^5@.!%-&lt;RBY_!V"W!7^A7X)!#252PMCUY*82K:4N$"7\",7Q,&lt;M%"$@D^XXHR?"A'*]!Q$(=_3XJUOPNREI85SZVUK]/F=P.B;??0H9Y^_X(&lt;^HI[0NS]&lt;NPO]@0G`/'M[WPX&gt;[Z`&lt;`R4J\0]\0T(`AN&amp;@_7P`/\S&gt;0&amp;(]/7`ASOV&amp;R%N;5&amp;TGKF.?UDS*%`S*%`S*!`S)!`S)!`S)(&gt;S*X&gt;S*X&gt;S*T&gt;S)T&gt;S)T&gt;S)__68/1C&amp;TGE:0*EIG41:)#E-R1F8YEH]33?R-/B%E`C34S**`(129EH]33?R*.YO%S**`%EHM34?"CK3\*8=DS*B_%6?!*0Y!E]A9=J&amp;8A#1$":-(!Q#!Q&amp;*Y/&gt;Q".Y!A_\#DS"*`!%HM$$;17?Q".Y!E`AY:+_+N%VL:,D92AZ(M@D?"S0YW&amp;I/2\(YXA=D_.B/DE?R_-AH!G&gt;Q3()O=DJY"QY(M@$2I\(]4A?R_.Y/.8PE0?6;:J7S@%9(M.D?!S0Y7%)'2\$9XA-D_&amp;B7"E?QW.Y$)`B93I:(M.D?!S)-3H4SRD-O.$I:!3'BU^`7KT@J?A3[V7KBV@V5+I?.N6$J(IY6$&gt;&gt;&gt;4.6.UGV_+J&amp;63W7;B&amp;5@ZQ+L=+I*F&amp;&gt;X$JKT`?/NK6N;#P;ED&lt;3&amp;L1Z&lt;&gt;9O`?3/_`V?O^V/W_V7G]V'K^6+S_63YTBKM6BI0J^L.JO&gt;8A0XV.-,Y@B??G,`_&gt;^[G+&lt;(98I:([:J04SPB[(FX`$`_1?]'X7N]TF9I`^8LU&gt;#!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="DAQmx Functions" Type="Folder">
-		<Item Name="Create Task Wrapper.vi" Type="VI" URL="../Create Task Wrapper.vi"/>
-		<Item Name="Create DO Channel Wrapper.vi" Type="VI" URL="../Create DO Channel Wrapper.vi"/>
-		<Item Name="Create CI Frequency Channel Wrapper.vi" Type="VI" URL="../Create CI Frequency Channel Wrapper.vi"/>
-		<Item Name="Write Digital Lines Wrapper.vi" Type="VI" URL="../Write Digital Lines Wrapper.vi"/>
-		<Item Name="Read Counter Double Wrapper.vi" Type="VI" URL="../Read Counter Double Wrapper.vi"/>
-		<Item Name="Implicit Timing Wrapper.vi" Type="VI" URL="../Implicit Timing Wrapper.vi"/>
-		<Item Name="Start Task Wrapper.vi" Type="VI" URL="../Start Task Wrapper.vi"/>
-		<Item Name="Stop Task Wrapper.vi" Type="VI" URL="../Stop Task Wrapper.vi"/>
-		<Item Name="Get Task Attribute Wrapper.vi" Type="VI" URL="../Get Task Attribute Wrapper.vi"/>
-		<Item Name="Get Channel Attribute String Wrapper.vi" Type="VI" URL="../Get Channel Attribute String Wrapper.vi"/>
-		<Item Name="Get Channel Attribute Double Wrapper.vi" Type="VI" URL="../Get Channel Attribute Double Wrapper.vi"/>
-		<Item Name="Set Channel Attribute String Wrapper.vi" Type="VI" URL="../Set Channel Attribute String Wrapper.vi"/>
-		<Item Name="Set Channel Attribute Double Wrapper.vi" Type="VI" URL="../Set Channel Attribute Double Wrapper.vi"/>
+		<Item Name="Create Task Wrapper.vi" Type="VI" URL="../DAQmx Functions/Create Task Wrapper.vi"/>
+		<Item Name="Create DO Channel Wrapper.vi" Type="VI" URL="../DAQmx Functions/Create DO Channel Wrapper.vi"/>
+		<Item Name="Create CI Frequency Channel Wrapper.vi" Type="VI" URL="../DAQmx Functions/Create CI Frequency Channel Wrapper.vi"/>
+		<Item Name="Write Digital Lines Wrapper.vi" Type="VI" URL="../DAQmx Functions/Write Digital Lines Wrapper.vi"/>
+		<Item Name="Read Counter Double Wrapper.vi" Type="VI" URL="../DAQmx Functions/Read Counter Double Wrapper.vi"/>
+		<Item Name="Implicit Timing Wrapper.vi" Type="VI" URL="../DAQmx Functions/Implicit Timing Wrapper.vi"/>
+		<Item Name="Start Task Wrapper.vi" Type="VI" URL="../DAQmx Functions/Start Task Wrapper.vi"/>
+		<Item Name="Stop Task Wrapper.vi" Type="VI" URL="../DAQmx Functions/Stop Task Wrapper.vi"/>
+		<Item Name="Clear Task Wrapper.vi" Type="VI" URL="../DAQmx Functions/Clear Task Wrapper.vi"/>
+		<Item Name="Get Task Attribute Wrapper.vi" Type="VI" URL="../DAQmx Functions/Get Task Attribute Wrapper.vi"/>
+		<Item Name="Get Channel Attribute String Wrapper.vi" Type="VI" URL="../DAQmx Functions/Get Channel Attribute String Wrapper.vi"/>
+		<Item Name="Get Channel Attribute Double Wrapper.vi" Type="VI" URL="../DAQmx Functions/Get Channel Attribute Double Wrapper.vi"/>
+		<Item Name="Set Channel Attribute String Wrapper.vi" Type="VI" URL="../DAQmx Functions/Set Channel Attribute String Wrapper.vi"/>
+		<Item Name="Set Channel Attribute Double Wrapper.vi" Type="VI" URL="../DAQmx Functions/Set Channel Attribute Double Wrapper.vi"/>
 	</Item>
-	<Item Name="Helpers" Type="Folder">
-		<Item Name="Log gRPC Error.vi" Type="VI" URL="../Log gRPC Error.vi"/>
-		<Item Name="Fetch Task from Map.vi" Type="VI" URL="../Fetch Task from Map.vi"/>
-		<Item Name="String to Task.vi" Type="VI" URL="../String to Task.vi"/>
-		<Item Name="Task to String.vi" Type="VI" URL="../Task to String.vi"/>
+	<Item Name="SubVIs" Type="Folder">
+		<Item Name="Log gRPC Error.vi" Type="VI" URL="../SubVIs/Log gRPC Error.vi"/>
+		<Item Name="Fetch Task from Map.vi" Type="VI" URL="../SubVIs/Fetch Task from Map.vi"/>
+		<Item Name="String to Task.vi" Type="VI" URL="../SubVIs/String to Task.vi"/>
+		<Item Name="Task to String.vi" Type="VI" URL="../SubVIs/Task to String.vi"/>
+	</Item>
+	<Item Name="TypeDefs" Type="Folder">
+		<Item Name="Create Task Inputs.ctl" Type="VI" URL="../TypeDefs/Create Task Inputs.ctl"/>
 	</Item>
 </Library>
