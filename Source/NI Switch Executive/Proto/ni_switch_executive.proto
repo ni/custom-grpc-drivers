@@ -1,0 +1,107 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "NiSwitchExecutiveProto";
+option java_package = "com.ni.grpcsupport.nise";
+option objc_class_prefix = "NISE";
+
+package nise_grpcsupport;
+
+service NiSwitchExecutive {
+	rpc OpenSession (OpenSessionRequest) returns (OpenSessionResponse) {}
+	rpc CloseSession (CloseSessionRequest) returns (CloseSessionResponse) {}
+	rpc Connect (ConnectRequest) returns (ConnectResponse) {}
+	rpc Disconnect (DisconnectRequest) returns (DisconnectResponse) {}
+	rpc IsConnected (IsConnectedRequest) returns (IsConnectedResponse) {}
+	rpc DisconnectAll (DisconnectAllRequest) returns (DisconnectAllResponse) {}
+}
+
+enum MulticonnectMode {
+	MULTICONNECT_MODE_USE_DEFAULT_MODE = 0;
+	MULTICONNECT_MODE_NO_MULTICONNECT = 1;
+	MULTICONNECT_MODE_MULTICONNECT_ROUTES = 2;
+}
+
+enum SessionInitializationBehavior {
+	SESSION_INITIALIZATION_BEHAVIOR_AUTO = 0;
+	SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_CLOSE = 1;
+	SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_DETACH = 2;
+	SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_DETACH = 3;
+	SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_CLOSE = 4;
+}
+
+// Translated form of the user-facing 5-element enum to the internal 4-element enum.
+enum InstrumentSessionInitializationBehavior {
+	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_CLOSE = 0;
+	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_DETACH = 1;
+	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_DETACH = 2;
+	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_CLOSE = 3;
+}
+
+message StatusInfo {
+	string status = 1;
+}
+
+message Session {
+	uint32 id = 1;
+}
+
+message SessionInfo {
+	Session session_id = 1;
+	InstrumentSessionInitializationBehavior initialize_and_close_session_behavior = 2;
+}
+
+message OpenSessionRequest {
+	string virtual_device_name = 1;
+	string optional_string = 2;
+	SessionInitializationBehavior initialize_and_close_session_behavior = 3;
+}
+
+message OpenSessionResponse {
+	SessionInfo session_info = 1;
+}
+
+message CloseSessionRequest {
+	SessionInfo session_info = 1;
+}
+
+message CloseSessionResponse {
+	StatusInfo status_info = 1;
+}
+
+message ConnectRequest {
+	string connection_specification = 1;
+	Session session_id = 2;
+	bool wait_for_rebounce = 3;
+	MulticonnectMode multi_connect_mode = 4;
+}
+
+message ConnectResponse {
+	StatusInfo status_info = 1;
+}
+
+message DisconnectRequest {
+	string disconnect_specification = 1;
+	Session session_id = 2;
+}
+
+message DisconnectResponse {
+	StatusInfo status_info = 1;
+}
+
+message IsConnectedRequest {
+	string route_specification = 1;
+	Session session_id = 2;
+}
+
+message IsConnectedResponse {
+	bool is_connected = 1;
+}
+
+message DisconnectAllRequest {
+	Session session_id = 1;
+}
+
+message DisconnectAllResponse {
+	StatusInfo status_info = 1;
+}
