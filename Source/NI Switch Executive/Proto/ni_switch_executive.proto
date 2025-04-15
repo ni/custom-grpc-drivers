@@ -42,19 +42,19 @@ message StatusInfo {
 	string status = 1;
 }
 
-message Session {
+message SessionId {
 	uint32 id = 1;
 }
 
 message SessionInfo {
-	Session session_id = 1;
-	InstrumentSessionInitializationBehavior initialize_and_close_session_behavior = 2;
+	SessionId session_id = 1;
+	InstrumentSessionInitializationBehavior instrument_initialization_behavior = 2;
 }
 
 message OpenSessionRequest {
 	string virtual_device_name = 1;
 	string optional_string = 2;
-	SessionInitializationBehavior initialize_and_close_session_behavior = 3;
+	SessionInitializationBehavior initialization_behavior = 3;
 }
 
 message OpenSessionResponse {
@@ -70,8 +70,8 @@ message CloseSessionResponse {
 }
 
 message ConnectRequest {
-	string connection_specification = 1;
-	Session session_id = 2;
+	SessionId session_id = 1;
+	string connection_specification = 2;
 	bool wait_for_rebounce = 3;
 	MulticonnectMode multi_connect_mode = 4;
 }
@@ -81,8 +81,8 @@ message ConnectResponse {
 }
 
 message DisconnectRequest {
-	string disconnect_specification = 1;
-	Session session_id = 2;
+	SessionId session_id = 1;
+	string disconnect_specification = 2;
 }
 
 message DisconnectResponse {
@@ -90,8 +90,8 @@ message DisconnectResponse {
 }
 
 message IsConnectedRequest {
-	string route_specification = 1;
-	Session session_id = 2;
+	SessionId session_id = 1;
+	string route_specification = 2;
 }
 
 message IsConnectedResponse {
@@ -99,7 +99,7 @@ message IsConnectedResponse {
 }
 
 message DisconnectAllRequest {
-	Session session_id = 1;
+	SessionId session_id = 1;
 }
 
 message DisconnectAllResponse {
