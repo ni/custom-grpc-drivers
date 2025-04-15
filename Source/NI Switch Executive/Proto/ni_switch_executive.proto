@@ -38,16 +38,8 @@ enum InstrumentSessionInitializationBehavior {
 	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_CLOSE = 3;
 }
 
-message StatusInfo {
-	string status = 1;
-}
-
-message SessionId {
-	uint32 id = 1;
-}
-
-message SessionInfo {
-	SessionId session_id = 1;
+message SessionInformation {
+	uint32 session_id = 1;
 	InstrumentSessionInitializationBehavior instrument_initialization_behavior = 2;
 }
 
@@ -58,39 +50,39 @@ message OpenSessionRequest {
 }
 
 message OpenSessionResponse {
-	SessionInfo session_info = 1;
+	SessionInformation session_information = 1;
 }
 
 message CloseSessionRequest {
-	SessionInfo session_info = 1;
+	SessionInformation session_information = 1;
 }
 
 message CloseSessionResponse {
-	StatusInfo status_info = 1;
+	string status_info = 1;
 }
 
 message ConnectRequest {
-	SessionId session_id = 1;
+	uint32 session_id = 1;
 	string connection_specification = 2;
 	bool wait_for_rebounce = 3;
 	MulticonnectMode multi_connect_mode = 4;
 }
 
 message ConnectResponse {
-	StatusInfo status_info = 1;
+	string status_info = 1;
 }
 
 message DisconnectRequest {
-	SessionId session_id = 1;
+	uint32 session_id = 1;
 	string disconnect_specification = 2;
 }
 
 message DisconnectResponse {
-	StatusInfo status_info = 1;
+	string status_info = 1;
 }
 
 message IsConnectedRequest {
-	SessionId session_id = 1;
+	uint32 session_id = 1;
 	string route_specification = 2;
 }
 
@@ -99,9 +91,9 @@ message IsConnectedResponse {
 }
 
 message DisconnectAllRequest {
-	SessionId session_id = 1;
+	uint32 session_id = 1;
 }
 
 message DisconnectAllResponse {
-	StatusInfo status_info = 1;
+	string status_info = 1;
 }
