@@ -64,8 +64,8 @@ message CloseSessionResponse {
 message ConnectRequest {
 	uint32 session_id = 1;
 	string connection_specification = 2;
-	bool wait_for_rebounce = 3;
-	MulticonnectMode multi_connect_mode = 4;
+	bool wait_for_debounce = 3;
+	MulticonnectMode multiconnect_mode = 4;
 }
 
 message ConnectResponse {
