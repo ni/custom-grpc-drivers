@@ -1,0 +1,83 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_outer_classname = "NiSwitchExecutive";
+option java_package = "com.ni.grpcsupport.nise";
+option objc_class_prefix = "NISE";
+
+package niswitchexecutive_grpc;
+
+import "session.proto";
+
+service NiSwitchExecutive {
+	rpc OpenSession(OpenSessionRequest) returns (OpenSessionResponse) {}
+	rpc CloseSession(CloseSessionRequest) returns (CloseSessionResponse) {}
+	rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+	rpc Disconnect(DisconnectRequest) returns (DisconnectResponse) {}
+	rpc IsConnected(IsConnectedRequest) returns (IsConnectedResponse) {}
+	rpc DisconnectAll(DisconnectAllRequest) returns (DisconnectAllResponse) {}
+}
+
+enum MulticonnectMode {
+	MULTICONNECT_MODE_USE_DEFAULT_MODE = 0;
+	MULTICONNECT_MODE_NO_MULTICONNECT = 1;
+	MULTICONNECT_MODE_MULTICONNECT_ROUTES = 2;
+}
+
+message OpenSessionRequest {
+	string virtual_device_name = 1;
+	string optional_string = 2;
+	nidevice_grpc.SessionInitializationBehavior initialization_behavior = 3;
+}
+
+message OpenSessionResponse {
+	int32 status = 1;
+	nidevice_grpc.Session session_id = 2;
+	bool new_session_initialized = 3;
+}
+
+message CloseSessionRequest {
+	nidevice_grpc.Session session_id = 1;
+}
+
+message CloseSessionResponse {
+	int32 status = 1;
+}
+
+message ConnectRequest {
+	nidevice_grpc.Session session_id = 1;
+	string connection_specification = 2;
+	bool wait_for_debounce = 3;
+	MulticonnectMode multiconnect_mode = 4;
+}
+
+message ConnectResponse {
+	int32 status = 1;
+}
+
+message DisconnectRequest {
+	nidevice_grpc.Session session_id = 1;
+	string disconnection_specification = 2;
+}
+
+message DisconnectResponse {
+	int32 status = 1;
+}
+
+message IsConnectedRequest {
+	nidevice_grpc.Session session_id = 1;
+	string route_specification = 2;
+}
+
+message IsConnectedResponse {
+	int32 status = 1;
+	bool is_connected = 2;
+}
+
+message DisconnectAllRequest {
+	nidevice_grpc.Session session_id = 1;
+}
+
+message DisconnectAllResponse {
+	int32 status = 1;
+}
