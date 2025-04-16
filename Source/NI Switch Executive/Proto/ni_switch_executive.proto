@@ -30,20 +30,6 @@ enum SessionInitializationBehavior {
 	SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_CLOSE = 4;
 }
 
-// Translated form of the user-facing 5-element enum to the internal 4-element enum.
-enum InstrumentSessionInitializationBehavior {
-	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_UNSPECIFIED = 0;
-	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_CLOSE = 1;
-	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_DETACH = 2;
-	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_AND_DETACH = 3;
-	INSTRUMENT_SESSION_INITIALIZATION_BEHAVIOR_ATTACH_AND_CLOSE = 4;
-}
-
-message SessionInformation {
-	uint32 session_id = 1;
-	InstrumentSessionInitializationBehavior instrument_initialization_behavior = 2;
-}
-
 message OpenSessionRequest {
 	string virtual_device_name = 1;
 	string optional_string = 2;
@@ -51,11 +37,14 @@ message OpenSessionRequest {
 }
 
 message OpenSessionResponse {
-	SessionInformation session_information = 1;
+	uint32 session_id = 1;
+	bool new_session_initialized = 2;
 }
 
 message CloseSessionRequest {
-	SessionInformation session_information = 1;
+	uint32 session_id = 1;
+	SessionInitializationBehavior initialization_behavior = 2;
+	bool new_session_initialized = 3;
 }
 
 message CloseSessionResponse {
