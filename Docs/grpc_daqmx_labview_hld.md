@@ -11,9 +11,9 @@
     - [Design & Implementation](#design--implementation)
         - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
         - [NI DAQmx Server Implementation](#ni-daqmx-server-implementation)
-            - [Server-Side Session Management](#server-side-session-management)
+            - [Server-Side Session Management Implementation](#server-side-session-management-implementation)
         - [NI DAQmx Client Implementation](#ni-daqmx-client-implementation)
-            - [Client-Side Session Management](#client-side-session-management)
+            - [Client-Side Session Management Implementation](#client-side-session-management-implementation)
 
 ## Who
 
@@ -31,13 +31,9 @@ The NI DAQmx is not supported (as of Apr 2025) in terms of session management an
 ### Key Requirements
 
 **gRPC Server:** Implement a gRPC server to support DAQmx functions and manage IS Pro session initialization behaviors.
-
 **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
-
 **TestStand:** Offer helper functions (VIs) for building automation sequences with the DAQmx gRPC driver.
-
 **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
-
 **Deployment:** Deploy the gRPC server and client VIs using NI and VI Packages, respectively.
 
 ## Scope
@@ -110,7 +106,7 @@ service NiDAQmx {
 - Implement session management on the server using a session map: `{Session Name (String): Task (Refnum)}`.
 - A wrapper that Logs errors from driver wrappers in server to gRPC client.
 
-#### Server-Side Session Management
+#### Server-Side Session Management Implementation
 
 - **Method Name:** `CreateTask`
     - **Inputs:** 
@@ -147,8 +143,7 @@ service NiDAQmx {
 - Create `Initialize Sessions - 1Sess.vi` wrapper to initialize the NI DAQmx driver session. This wrapper should first invoke the `Create.vi` to set the session behavior, followed by calling the `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session.vim`.  
     ![Initialize Sessions - 1Sess.vi](Images/Initialize_Sessions.png)
 
-
-#### Client-Side Session Management
+#### Client-Side Session Management Implementation
 
 - **Method Name:** `Initialize MeasurementLink Session.vi`
     - **Inputs:** 
@@ -182,3 +177,4 @@ service NiDAQmx {
     - **Initialize and Close Behaviour:** 
         - **Initialize and Detach / Attach and Detach:** No action is required.
         - **Initialize and Close / Attach and Close:** Invoke the gRPC client method to clear the task.
+    - Clear the task based on the initialize and close behaviour and destroy the client.
