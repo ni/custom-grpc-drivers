@@ -14,5 +14,8 @@ enum SessionInitializationBehavior {
 }
 
 message Session {
-  uint32 id = 1;
+  oneof session {
+    string name = 1;
+    uint32 id = 2;
+  }
 }
