@@ -12,7 +12,11 @@
     - [Scope](#scope)
         - [NI DAQmx Server](#ni-daqmx-server)
         - [NI DAQmx Client](#ni-daqmx-client)
+        - [TestStand](#teststand)
+        - [Examples](#examples)
+        - [Deployment](#deployment)
     - [Design & Implementation](#design--implementation)
+        - [Overview](#overview)
         - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
         - [NI DAQmx Server Implementation](#ni-daqmx-server-implementation)
             - [Server-Side Session Management Implementation](#server-side-session-management-implementation)
@@ -78,7 +82,7 @@ This feature aims to provide a compatible/equivalent workaround to achieve the I
 ### NI DAQmx Server
 
 1. Develop an NI DAQmx gRPC server using the [LabVIEW gRPC Server Client-Code Generation tool](https://github.com/ni/grpc-labview/blob/master/labview%20source/Client%20Server%20Support%20New/gRPC%20Scripting%20Tools/Open%20gRPC%20Server-Client%20%5B2%5D%20-%20Code%20Generator.vi).
-2. Implement the gRPC server to support the following NI DAQmx functions and property nodes:  
+2. Implement the gRPC server to support the requested NI DAQmx functions and property nodes.
 3. Ensure support for all five initialization behaviors required for IS Pro session management:
     - Auto
     - Initialize and Close
@@ -93,7 +97,25 @@ This feature aims to provide a compatible/equivalent workaround to achieve the I
 3. Use class objects to store gRPC session IDs, aligning with DAQmx session behavior.
 4. Organize the gRPC client VIs in a function palette equivalent to the native DAQmx driver.
 
+### TestStand
+
+1. Helper functions (VIs) to build automation sequences with DAQmx gRPC driver
+
+### Examples
+
+1. LabVIEW M-Plugin example demonstrating the DAQmx client usage
+2. TestStand sequence example demonstrating the helper function usage and M-Plugins with DAQmx calls
+
+### Deployment
+
+1. NI Package to deploy the gRPC server
+2. VI Package to deploy the gRPC client VIs (incl. the palette)
+
 ## Design & Implementation
+
+### Overview
+
+<!-- Inset Preface/Overview for Design and Implementation -->
 
 ### Proto File for NI DAQmx Functions
 
