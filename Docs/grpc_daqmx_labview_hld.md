@@ -108,7 +108,7 @@ service NiDAQmx {
 
 #### Server-Side Session Management Implementation
 
-- **Method Name:** `CreateTask`
+- **Method Name:** `CreateTask Wrapper`
     - **Inputs:** 
         - `session_name` (string)
         - `initialization_behavior` (enum)
@@ -116,16 +116,16 @@ service NiDAQmx {
         - `status` (int32)
         - `task` (session object)
         - `new_session_initialized` (bool)
-    - **Initialization Behaviour:**
+    - **Initialization Behaviour Implementation:**
         - **AUTO:** If the task exists, attach (`Attach and Detach`) to it (`new_session_initialized` = `False`). Otherwise, create (`Initialize and Close`) a new task (`new_session_initialized` = `True`).
         - **INITIALIZE_NEW:** If the task exists, return `ALREADY_EXISTS` error. Otherwise, create a new task (`new_session_initialized` = `True`).
         - **ATTACH_TO_EXISTING:** If the session exists, attach to it (`new_session_initialized` = `False`). Otherwise, return a `SESSION_NOT_FOUND` error.
-- **Method Name:** `ClearTask`
+- **Method Name:** `ClearTask Wrapper`
     - **Inputs:** 
         - `task` (session object)
     - **Outputs:**
         - `status` (int32)
-    - **Close Behaviour:**
+    - **Close Behaviour Implementation:**
         - Checks if the session map is empty. If the session map is empty, throw `SESSION_NOT_FOUND` error. Else clears the respective task and remove the task from map.
 
 ### NI DAQmx Client Implementation
