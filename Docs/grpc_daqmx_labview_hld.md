@@ -5,6 +5,15 @@
     - [Feature WorkItem](#feature-workitem)
     - [Problem Statement](#problem-statement)
         - [Key Requirements](#key-requirements)
+    - [Scope](#scope)
+        - [NI DAQmx Server Generation](#ni-daqmx-server-generation)
+        - [NI DAQmx Client Generation](#ni-daqmx-client-generation)
+    - [Design & Implementation](#design--implementation)
+        - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
+        - [NI DAQmx Server Implementation](#ni-daqmx-server-implementation)
+            - [Server-Side Session Management](#server-side-session-management)
+        - [NI DAQmx Client Implementation](#ni-daqmx-client-implementation)
+            - [Client-Side Session Management](#client-side-session-management)
 
 ## Who
 
@@ -99,41 +108,77 @@ service NiDAQmx {
 - Use the LabVIEW gRPC Server Client-Code Generation tool with the NI DAQmx proto file as input to generate a gRPC server template for the defined methods.
 - Develop LabVIEW wrappers for the NI DAQmx driver functions and property nodes.
 - Implement session management on the server using a session map: `{Session Name (String): Task (Refnum)}`.
+- A wrapper that Logs errors from driver wrappers in server to gRPC client.
 
 #### Server-Side Session Management
 
 - **Method Name:** `CreateTask`
-- **Inputs:** 
-    - `session_name` (string)
-    - `initialization_behavior` (enum)
-- **Outputs:**
-    - `status` (int32)
-    - `task` (session object)
-    - `new_session_initialized` (bool)
-- **Initialization Behaviour:**
-    - Map the five initialization and close behaviors to the following enum values:
-        - **AUTO:** If the session exists, attach to it (`new_session_initialized` = `False`). Otherwise, initialize a new session (`new_session_initialized` = `True`).
-        - **INITIALIZE_NEW:** If the session exists, return an `ALREADY_EXISTS` error. Otherwise, create a new session (`new_session_initialized` = `True`).
+    - **Inputs:** 
+        - `session_name` (string)
+        - `initialization_behavior` (enum)
+    - **Outputs:**
+        - `status` (int32)
+        - `task` (session object)
+        - `new_session_initialized` (bool)
+    - **Initialization Behaviour:**
+        - **AUTO:** If the task exists, attach (`Attach and Detach`) to it (`new_session_initialized` = `False`). Otherwise, create (`Initialize and Close`) a new task (`new_session_initialized` = `True`).
+        - **INITIALIZE_NEW:** If the task exists, return `ALREADY_EXISTS` error. Otherwise, create a new task (`new_session_initialized` = `True`).
         - **ATTACH_TO_EXISTING:** If the session exists, attach to it (`new_session_initialized` = `False`). Otherwise, return a `SESSION_NOT_FOUND` error.
+- **Method Name:** `ClearTask`
+    - **Inputs:** 
+        - `task` (session object)
+    - **Outputs:**
+        - `status` (int32)
+    - **Close Behaviour:**
+        - Checks if the session map is empty. If the session map is empty, throw `SESSION_NOT_FOUND` error. Else clears the respective task and remove the task from map.
 
 ### NI DAQmx Client Implementation
 
 - Utilize the LabVIEW gRPC Server Client-Code Generation tool with the NI DAQmx proto file to create a gRPC client template for the specified methods.
-- Develop LabVIEW wrappers for the NI DAQmx client methods (excluding Create Task and Clear Task) to ensure the connector pane matches the corresponding DAQmx functions and property nodes.
+- Develop LabVIEW wrappers for the NI DAQmx client methods to ensure the connector pane matches the corresponding DAQmx functions and property nodes.
 - Implement logic for Initialize and Close Measurement Plug-In session by overriding the session methods of ISession Factory.lvclass which includes: 
       - ***Initialize MeasurementLink Session.vi*** - Initializes the measurement plug-ins session for the instrument selected.
       - ***Get Instrument Type ID.vi*** - Gets the instrument type ID mentioned in the pin map file for the selected instrument.
       - ***Get Provided Interface and Service Class.vi*** - Returns the provided interface and service class that will be used to query the NI Discovery service for the address and port of the instrument's gRPC server.
       - ***Close MeasurementLink Session.vi*** - Closes the local measurement plug-ins session.
-- Adapt the Measurement Plug-In Initialize and Close wrappers for the NI DAQmx driver within the above session methods.
+- The Measurement Plug-In `Initialize MeasurementLink Session.vi` and `Close MeasurementLink Session.vi` VIs internally utilize the NI DAQmx `Create Task` and `Clear Task` client wrappers for session management.
+- Develop a `Create.vi` to store the session initialization and close behavior enum within the session object.  
+    ![Create.vi](Images/Create_VI.png)
+- Create `Initialize Sessions - 1Sess.vi` wrapper to initialize the NI DAQmx driver session. This wrapper should first invoke the `Create.vi` to set the session behavior, followed by calling the `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session.vim`.  
+    ![Initialize Sessions - 1Sess.vi](Images/Initialize_Sessions.png)
+
 
 #### Client-Side Session Management
 
+- **Method Name:** `Initialize MeasurementLink Session.vi`
+    - **Inputs:** 
+        - `session factory in` (class object)
+        - `initialize and close session behavior` (enum)
+        - `session initialization parameters` (cluster)
+        - `remote connection options` (cluster)
+    - **Outputs:**
+        - `session factory out` (class object)
+        - `session out` (refnum)
+    - **Initialization Behavior:**
+        - The initialization behavior enum for the measurement plug-in is derived from the session factory object instead of the `initialize and close session behavior` input.  
+        ![Session Factory Private Data](Images/Session_Factory_Private_Data.png)
+            - This is because the `initialize and close session behavior` input of `Initialize MeasurementLink Session.vi` does not include the `Auto` behavior required for the DAQmx server.  
+            ![Initialize Behavior Enum in Initialize MeasurementLink Session VI](Images/Initialize_behaviour_enum.png)
+        - Map the five measurement plug-in initialization behavior enum values to the following:
+            - `Auto` -> SESSION_INITIALIZATION_BEHAVIOR_UNSPECIFIED
+            - `Initialize and Close` and `Initialize and Detach` -> SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_NEW
+            - `Attach and Close` and `Attach and Detach` -> SESSION_INITIALIZATION_BEHAVIOR_ATTACH_TO_EXISTING
+    - Use the `Create Client` and `Create Task` methods within this VI to manage tasks on the server.
+    - The `Create Task` client method returns a `new_session_initialized` boolean, which determines the close behavior for `Auto` as follows:
+        - If the initialization behavior is `Auto` and `new_session_initialized` is `True`, the close behavior is `Initialize and Close`.
+        - If the initialization behavior is `Auto` and `new_session_initialized` is `False`, the close behavior is `Attach and Detach`.
+        - For the other four initialization behaviors, the `new_session_initialized` value is not relevant.  
+        ![Create Task Request and Response Messages](Images/Create_Task.png)
 - **Method Name:** `Close MeasurementLink Session.vi`
-- **Inputs:** 
-    - `session factory in` (class object)
-    - `initialize and close session behavior` (enum)
-    - `session in` (refnum)
-- **Behavior for Initialize and Close:** 
-    - **Initialize and Detach / Attach and Detach:** No action is required.
-    - **Initialize and Close / Attach and Close:** Invoke the gRPC client method to clear the task.
+    - **Inputs:** 
+        - `session factory in` (class object)
+        - `initialize and close session behavior` (enum)
+        - `session in` (refnum)
+    - **Initialize and Close Behaviour:** 
+        - **Initialize and Detach / Attach and Detach:** No action is required.
+        - **Initialize and Close / Attach and Close:** Invoke the gRPC client method to clear the task.
