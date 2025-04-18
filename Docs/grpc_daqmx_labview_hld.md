@@ -117,6 +117,25 @@ This feature aims to provide a compatible/equivalent workaround to achieve the I
 
 <!-- Inset Preface/Overview for Design and Implementation -->
 
+A high-level workflow for implementing custom gRPC Server and Client interface to achieve the IS Pro compatible session management and session reuse without extending the gRPC device server is given below:
+
+1. **Create proto file for the NI DAQmx functions**
+    - A .proto file is used to define the structure of the data and the services for gRPC communication. For NI DAQmx functions, this file will describe the remote procedure calls (RPCs) and the data types (messages) needed to interact with the DAQmx API.
+    - It acts as the contract between the client and server, ensuring both sides understand the data and operations.
+2. **Create gRPC Server and Client for the NI DAQmx Functions**
+    - The server implements the methods defined in the .proto file and interacts with the NI DAQmx API to perform the requested operations.
+    - The client provides an interface for users to call these methods remotely.
+    - This enables remote communication between the client and server using gRPC, allowing distributed systems to interact with the DAQmx API.
+3. **Server Implementation**
+    - The server has the acutal DAQmx functions and property nodes.
+    - Within the gRPC server, implement the logic to initialize and manage sessions based on the selected initialization behavior. 
+    - The server needs to manage DAQmx sessions (e.g., tasks or resources) efficiently. This involves creating, tracking, and cleaning up sessions to avoid resource leaks.
+    - This ensures that multiple clients can interact with the server without conflicts or resource exhaustion.
+4. **Client Implementation**
+    - The client must handle session IDs or tokens provided by the server to maintain continuity across multiple calls (e.g., starting and stopping the same task).
+    - This ensures that the client can interact with the correct session on the server.
+5. **Executable - Building and Deployment**
+
 ### Proto File for NI DAQmx Functions
 
 1. The Proto file for NI DAQmx functions is available in the [ni/gRPC-device repository](https://github.com/ni/grpc-device/blob/main/generated/nidaqmx/nidaqmx.proto).
