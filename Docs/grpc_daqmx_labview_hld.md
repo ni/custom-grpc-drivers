@@ -38,11 +38,10 @@ The NI DAQmx is not supported (as of Apr 2025) in terms of session management an
 
 ### Key Requirements
 
-1. **gRPC Server:** Implement a gRPC server to support DAQmx functions and manage IS Pro session initialization behaviors.
-2. **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
-3. **TestStand:** Offer helper functions (VIs) for building automation sequences with the DAQmx gRPC driver.
-4. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
-5. **Deployment:** Deploy the gRPC server and client VIs using NI and VI Packages, respectively.
+1. **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
+2. **TestStand:** Offer helper functions (VIs) for building automation sequences with the DAQmx gRPC driver.
+3. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
+4. **Deployment:** Deploy the gRPC server and client VIs using NI and VI Packages, respectively.
 
 ### Requested NI DAQmx Functions and Property Nodes
 
@@ -79,17 +78,6 @@ The NI DAQmx is not supported (as of Apr 2025) in terms of session management an
 
 This feature aims to provide a compatible/equivalent workaround to achieve the IS Pro compatible session management and session reuse without extending the gRPC device server. Once implemented, the M-Plugin developers will be able to use DAQmx with LabVIEW M-Plugins in IS and TS just like other natively supported instrumentation such as nidmm, nidcpower etc.,
 
-### NI DAQmx Server
-
-1. Develop an NI DAQmx gRPC server using the [LabVIEW gRPC Server Client-Code Generation tool](https://github.com/ni/grpc-labview/blob/master/labview%20source/Client%20Server%20Support%20New/gRPC%20Scripting%20Tools/Open%20gRPC%20Server-Client%20%5B2%5D%20-%20Code%20Generator.vi).
-2. Implement the gRPC server to support the requested NI DAQmx functions and property nodes.
-3. Ensure support for all five initialization behaviors required for IS Pro session management:
-    - Auto
-    - Initialize and Close
-    - Attach and Detach
-    - Initialize and Detach
-    - Attach and Close
-
 ### NI DAQmx Client
 
 1. Generate an NI DAQmx gRPC client using the LabVIEW gRPC Server Client-Code Generation tool for all implemented DAQmx methods.
@@ -108,33 +96,23 @@ This feature aims to provide a compatible/equivalent workaround to achieve the I
 
 ### Deployment
 
-1. NI Package to deploy the gRPC server
-2. VI Package to deploy the gRPC client VIs (incl. the palette)
+1. VI Package to deploy the gRPC client VIs (incl. the palette)
 
 ## Design & Implementation
 
 ### Overview
 
 <!-- Inset Preface/Overview for Design and Implementation -->
-
-A high-level workflow for implementing custom gRPC Server and Client interface to achieve the IS Pro compatible session management and session reuse without extending the gRPC device server is given below:
+The gRPC Device server supports DAQmx functions; however, LabVIEW wrappers are not yet available. Below is a high-level workflow for creating a custom client interface to enable IS Pro-compatible session management and session reuse:
 
 1. **Create proto file for the NI DAQmx functions**
     - A .proto file is used to define the structure of the data and the services for gRPC communication. For NI DAQmx functions, this file will describe the remote procedure calls (RPCs) and the data types (messages) needed to interact with the DAQmx API.
     - It acts as the contract between the client and server, ensuring both sides understand the data and operations.
-2. **Create gRPC Server and Client for the NI DAQmx Functions**
-    - The server implements the methods defined in the .proto file and interacts with the NI DAQmx API to perform the requested operations.
+2. **Create Client for the NI DAQmx Functions**
     - The client provides an interface for users to call these methods remotely.
-    - This enables remote communication between the client and server using gRPC, allowing distributed systems to interact with the DAQmx API.
-3. **Server Implementation**
-    - The server has the acutal DAQmx functions and property nodes.
-    - Within the gRPC server, implement the logic to initialize and manage sessions based on the selected initialization behavior. 
-    - The server needs to manage DAQmx sessions (e.g., tasks or resources) efficiently. This involves creating, tracking, and cleaning up sessions to avoid resource leaks.
-    - This ensures that multiple clients can interact with the server without conflicts or resource exhaustion.
+    - This enables remote communication between the client and gRPC device server, allowing distributed systems to interact with the DAQmx API.
 4. **Client Implementation**
-    - The client must handle session IDs or tokens provided by the server to maintain continuity across multiple calls (e.g., starting and stopping the same task).
-    - This ensures that the client can interact with the correct session on the server.
-5. **Executable - Building and Deployment**
+    - The Clients 
 
 ### Proto File for NI DAQmx Functions
 
@@ -172,35 +150,6 @@ service NiDAQmx {
 ```
 > [!NOTE]
 > The NI DAQmx proto file in the [ni/gRPC-device repository](https://github.com/ni/grpc-device/blob/main/generated/nidaqmx/nidaqmx.proto) is implemented in Python and supports the NI gRPC device server. These proto file methods are reused in LabVIEW to replicate the session management workflow.
-
-### NI DAQmx Server Implementation
-
-1. Use the LabVIEW gRPC Server Client-Code Generation tool with the NI DAQmx proto file as input to generate a gRPC server template for the defined methods.
-2. Develop LabVIEW wrappers for the NI DAQmx driver functions and property nodes.
-3. Implement session management on the server using a session map: `{Session Name (String): Task (Refnum)}`.
-4. A wrapper that Logs errors from driver wrappers in server to gRPC client.
-
-#### Server-Side Session Management Implementation
-
-- **Method Name:** `CreateTask Wrapper`
-    - **Inputs:** 
-        - `session_name` (string)
-        - `initialization_behavior` (enum)
-    - **Outputs:**
-        - `status` (int32)
-        - `task` (session object)
-        - `new_session_initialized` (bool)
-    - **Initialization Behaviour Implementation:**
-        - **AUTO:** If the task exists, attach (`Attach and Detach`) to it (`new_session_initialized` = `False`). Otherwise, create (`Initialize and Close`) a new task (`new_session_initialized` = `True`).
-        - **INITIALIZE_NEW:** If the task exists, return `ALREADY_EXISTS` error. Otherwise, create a new task (`new_session_initialized` = `True`).
-        - **ATTACH_TO_EXISTING:** If the session exists, attach to it (`new_session_initialized` = `False`). Otherwise, return a `SESSION_NOT_FOUND` error.
-- **Method Name:** `ClearTask Wrapper`
-    - **Inputs:** 
-        - `task` (session object)
-    - **Outputs:**
-        - `status` (int32)
-    - **Close Behaviour Implementation:**
-        - Checks if the session map is empty. If the session map is empty, throw `SESSION_NOT_FOUND` error. Else clears the respective task and remove the task from map.
 
 ### NI DAQmx Client Implementation
 
