@@ -44,7 +44,6 @@ LabVIEW gRPC client will be created to access the NI GRPC device server for sess
 1. **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
 2. **TestStand:** Offer helper functions (VIs) for building automation sequences with the DAQmx gRPC driver.
 3. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
-4. **Deployment:** Deploy the gRPC server and client VIs using NI and VI Packages, respectively.
 
 ## Requested NI DAQmx Functions and Property Nodes
 
