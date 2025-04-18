@@ -10,7 +10,6 @@
         - [Vision](#vision)
         - [User Workflow](#user-workflow)
     - [Scope](#scope)
-        - [NI DAQmx Server](#ni-daqmx-server)
         - [NI DAQmx Client](#ni-daqmx-client)
         - [TestStand](#teststand)
         - [Examples](#examples)
@@ -18,10 +17,9 @@
     - [Design & Implementation](#design--implementation)
         - [Overview](#overview)
         - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
-        - [NI DAQmx Server Implementation](#ni-daqmx-server-implementation)
-            - [Server-Side Session Management Implementation](#server-side-session-management-implementation)
-        - [NI DAQmx Client Implementation](#ni-daqmx-client-implementation)
-            - [Client-Side Session Management Implementation](#client-side-session-management-implementation)
+        - [NI DAQmx gRPC Client Creation](#ni-daqmx-grpc-client-creation)
+        - [Session Management Implementation in Client](#session-management-implementation-in-client)
+        - [DAQmx LabVIEW Client Deployment](#daqmx-labview-client-deployment)
 
 ## Who
 
@@ -80,7 +78,7 @@ This feature aims to provide a compatible/equivalent workaround to achieve the I
 
 ### NI DAQmx Client
 
-1. Generate an NI DAQmx gRPC client using the LabVIEW gRPC Server Client-Code Generation tool for all implemented DAQmx methods.
+1. Generate an NI DAQmx gRPC client using the LabVIEW [gRPC Server Client-Code Generation tool](https://github.com/ni/grpc-labview/blob/master/labview%20source/Client%20Server%20Support%20New/gRPC%20Scripting%20Tools/Open%20gRPC%20Server-Client%20%5B2%5D%20-%20Code%20Generator.vi) for all implemented DAQmx methods.
 2. Ensure the connector pane of the client VIs matches the equivalent DAQmx driver VIs.
 3. Use class objects to store gRPC session IDs, aligning with DAQmx session behavior.
 4. Organize the gRPC client VIs in a function palette equivalent to the native DAQmx driver.
@@ -107,12 +105,16 @@ The gRPC Device server supports DAQmx functions; however, LabVIEW wrappers are n
 
 1. **Create proto file for the NI DAQmx functions**
     - A .proto file is used to define the structure of the data and the services for gRPC communication. For NI DAQmx functions, this file will describe the remote procedure calls (RPCs) and the data types (messages) needed to interact with the DAQmx API.
-    - It acts as the contract between the client and server, ensuring both sides understand the data and operations.
-2. **Create Client for the NI DAQmx Functions**
-    - The client provides an interface for users to call these methods remotely.
+    - It acts as the contract between the client and gRPC device server, ensuring both sides understand the data and operations.
+2. **Create Client Stubs for the NI DAQmx Functions**
+    - The client provides an interface for users to call the DAQmx methods remotely.
     - This enables remote communication between the client and gRPC device server, allowing distributed systems to interact with the DAQmx API.
-4. **Client Implementation**
-    - The Clients 
+3. **Client-Side Session Management Implementation**  
+    - After generating the gRPC client, implement session management by overriding the `ISession Factory` interface.  
+    - This ensures proper initialization and closure of each session with the required configuration parameters.  
+    - Develop high-level wrappers that replicate the connector panes of the LabVIEW DAQmx driver to provide a user-friendly interface.
+4. **DAQmx LabVIEW Client Deployment**
+    - A VI package that installs the DAQmx client methods in the target PC and add the wrappers to the LabVIEW functions palette.
 
 ### Proto File for NI DAQmx Functions
 
@@ -151,24 +153,18 @@ service NiDAQmx {
 > [!NOTE]
 > The NI DAQmx proto file in the [ni/gRPC-device repository](https://github.com/ni/grpc-device/blob/main/generated/nidaqmx/nidaqmx.proto) is implemented in Python and supports the NI gRPC device server. These proto file methods are reused in LabVIEW to replicate the session management workflow.
 
-### NI DAQmx Client Implementation
+### NI DAQmx gRPC Client Creation
 
-1. Utilize the LabVIEW gRPC Server Client-Code Generation tool with the NI DAQmx proto file to create a gRPC client template for the specified methods.
-2. Develop LabVIEW wrappers for the NI DAQmx client methods to ensure the connector pane matches the corresponding DAQmx functions and property nodes.
-3. Implement logic for Initialize and Close Measurement Plug-In session by overriding the session methods of ISession Factory.lvclass which includes: 
+1. Utilize the LabVIEW [gRPC Server Client-Code Generation tool](https://github.com/ni/grpc-labview/blob/master/labview%20source/Client%20Server%20Support%20New/gRPC%20Scripting%20Tools/Open%20gRPC%20Server-Client%20%5B2%5D%20-%20Code%20Generator.vi) with the NI DAQmx proto file to create a gRPC client template for the specified methods.
+
+### Session Management Implementation in Client
+
+1. To implement session management in the gRPC client for DAQmx functions, we need to override the session methods of ISession Factory.lvclass which includes: 
     - ***Initialize MeasurementLink Session.vi*** - Initializes the measurement plug-ins session for the instrument selected.
     - ***Get Instrument Type ID.vi*** - Gets the instrument type ID mentioned in the pin map file for the selected instrument.
     - ***Get Provided Interface and Service Class.vi*** - Returns the provided interface and service class that will be used to query the NI Discovery service for the address and port of the instrument's gRPC server.
     - ***Close MeasurementLink Session.vi*** - Closes the local measurement plug-ins session.
-4. The Measurement Plug-In `Initialize MeasurementLink Session.vi` and `Close MeasurementLink Session.vi` VIs internally utilize the NI DAQmx `Create Task` and `Clear Task` client wrappers for session management.
-5. Develop a `Create.vi` to store the session initialization and close behavior enum within the session object.  
-    ![Create.vi](Images/Create_VI.png)
-6. Create `Initialize Sessions - 1Sess.vi` wrapper to initialize the NI DAQmx driver session. This wrapper should first invoke the `Create.vi` to set the session behavior, followed by calling the `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session.vim`.  
-    ![Initialize Sessions - 1Sess.vi](Images/Initialize_Sessions.png)
-
-#### Client-Side Session Management Implementation
-
-- **Method Name:** `Initialize MeasurementLink Session.vi`
+2. **Method Name:** `Initialize MeasurementLink Session.vi`
     - **Inputs:** 
         - `session factory in` (class object)
         - `initialize and close session behavior` (enum)
@@ -177,27 +173,34 @@ service NiDAQmx {
     - **Outputs:**
         - `session factory out` (class object)
         - `session out` (refnum)
-    - **Initialization Behavior:**
-        - The initialization behavior enum for the measurement plug-in is derived from the session factory object instead of the `initialize and close session behavior` input.  
-        ![Session Factory Private Data](Images/Session_Factory_Private_Data.png)
-            - This is because the `initialize and close session behavior` input of `Initialize MeasurementLink Session.vi` does not include the `Auto` behavior required for the DAQmx server.  
-            ![Initialize Behavior Enum in Initialize MeasurementLink Session VI](Images/Initialize_behaviour_enum.png)
-        - Map the five measurement plug-in initialization behavior enum values to the following:
-            - `Auto` -> SESSION_INITIALIZATION_BEHAVIOR_UNSPECIFIED
-            - `Initialize and Close` and `Initialize and Detach` -> SESSION_INITIALIZATION_BEHAVIOR_INITIALIZE_NEW
-            - `Attach and Close` and `Attach and Detach` -> SESSION_INITIALIZATION_BEHAVIOR_ATTACH_TO_EXISTING
-    - Use the `Create Client` and `Create Task` methods within this VI to manage tasks on the server.
-    - The `Create Task` client method returns a `new_session_initialized` boolean, which determines the close behavior for `Auto` as follows:
-        - If the initialization behavior is `Auto` and `new_session_initialized` is `True`, the close behavior is `Initialize and Close`.
-        - If the initialization behavior is `Auto` and `new_session_initialized` is `False`, the close behavior is `Attach and Detach`.
-        - For the other four initialization behaviors, the `new_session_initialized` value is not relevant.  
-        ![Create Task Request and Response Messages](Images/Create_Task.png)
-- **Method Name:** `Close MeasurementLink Session.vi`
+    - Use the `Create Client` and `Create Task` methods within this VI to create tasks on the server.
+3. **Method Name:** `Get Instrument Type ID.vi`
+    - **Inputs:** 
+        - `session factory in` (class object)
+    - **Outputs:**
+        - `session factory out` (class object)
+        - `instrument type id` (string)
+    - Set the `instrument type id` output to a string constant with the value `NIDAQmx`.
+4. **Method Name:** `Get Provided Interface and Service Class.vi`
+    - **Inputs:** 
+        - `session factory in` (class object)
+    - **Outputs:**
+        - `session factory out` (class object)
+        - `provided interface` (string)
+        - `service class` (string)
+    - Set the `provided interface` output to a string constant with the value `nidaqmx_grpc.NiDAQmx`.
+    - Set the `service class` output to a string constant with the value `ni.measurementlink.v1.grpcdeviceserver`.
+5. **Method Name:** `Close MeasurementLink Session.vi`
     - **Inputs:** 
         - `session factory in` (class object)
         - `initialize and close session behavior` (enum)
         - `session in` (refnum)
-    - **Initialize and Close Behaviour:** 
-        - **Initialize and Detach / Attach and Detach:** No action is required.
-        - **Initialize and Close / Attach and Close:** Invoke the gRPC client method to clear the task.
-    - Clear the task based on the initialize and close behaviour and destroy the client.
+        - `remote connection options` (cluster)
+    - Use the `Clear Task` and `Destroy Client` methods within this VI to close tasks on the server.
+6. Next, develop wrappers for each of the requested DAQmx functions, ensuring that their input and output connector panes closely match the format of the corresponding native driver functions.
+7. The replication of measurement plug-in session initialization wrapper for DAQmx `Initialize Session 1Sess.vi` and `Initialize Session NSess.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
+![Initialize_Session(s)](Images/Initialize_Sessions.png)
+![Create.vi](Images/Create_VI.png)
+
+### DAQmx LabVIEW Client Deployment
+
