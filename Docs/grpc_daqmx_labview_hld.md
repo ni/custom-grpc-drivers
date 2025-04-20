@@ -173,3 +173,4 @@ service NiDAQmx {
 
 ### DAQmx LabVIEW Client Deployment
 
+1. Deploy the gRPC DAQmx client wrapper VIs in the `Measurement I/O > NI DAQmx gRPC` section of the LabVIEW functions palette through a VI package.
