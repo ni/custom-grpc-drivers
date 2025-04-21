@@ -21,7 +21,6 @@
         - [NI DAQmx gRPC Client Creation](#ni-daqmx-grpc-client-creation)
         - [Session Management Implementation in Client](#session-management-implementation-in-client)
         - [DAQmx LabVIEW Client Deployment](#daqmx-labview-client-deployment)
-    - [Future Work Item](#future-work-item)
 
 ## Who
 
@@ -34,34 +33,34 @@
 
 ## Problem Statement
 
-NI gRPC device server supports session management and session reuse of NI DAQmx. Python Clients are available to access NI gRPC device server. But NI DAQmx cannot access (as of Apr 2025) NI gRPC device server in LabVIEW Measurement Plug-in due to absence of LabVIEW Client.
+NI gRPC device server supports session management and session reuse of NI DAQmx. Python Clients are available to interface with NI gRPC device server. However NI DAQmx (as of Apr 2025) cannot access NI gRPC device server in LabVIEW Measurement Plug-in due to absence of LabVIEW Client.
 
-## Proposed Solution:
+## Proposed Solution
 
 LabVIEW gRPC client will be created to access the NI GRPC device server for session reuse across LabVIEW Measurement Plug-ins and the clients will be integrated with Session Management APIs to enable session management.
 
 ## Key Requirements
 
 1. **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
-2. **TestStand:** Offer helper functions (VIs) for building automation sequences with the DAQmx gRPC driver.
-3. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
+2. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
+3. **TestStand helper functions:** Offer helper functions (VIs) to enable session sharing across measurement plug-ins in the automation sequence example of this DAQmx gRPC driver.
 
 ## Requested NI DAQmx Functions and Property Nodes
 
 | **NI DAQmx Functions & Property Nodes**                                   | **Inputs (Data Type)**                                                                                     | **Outputs (Data Type)**                                   |
 |:--------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
-| **DAQmx Create Task.vi**                                                  | task to copy (DAQmx Task Resource), global virtual channels (DAQmx Global Channel Resource), new task name (String), auto cleanup (Bool) | task out (DAQmx Task Resource)                           |
-| **DAQmx Create Channel (DO-Digital Output).vi**                           | task in (DAQmx Task Resource), lines (DAQmx Physical Channel Resource), name to assign (String), line grouping (Enum)                     | task out (DAQmx Task Resource)                           |
-| **DAQmx Create Channel (CI-Frequency).vi**                                | task in (DAQmx Task Resource), counter (DAQmx Physical Channel Resource), name to assign (String), units (Enum), custom scale name (DAQmx Scale Resource), starting edge (Enum), measurement time (Double), maximum value (Double), minimum value (Double), measurement method (Enum), divisor (uint32) | task out (DAQmx Task Resource)                           |
-| **DAQmx Write (Digital Bool 1Line 1Point).vi**                            | task/channels in (DAQmx Task Resource), data (Bool), timeout (Double), auto start (Bool)                                                   | task out (DAQmx Task Resource), number of samples written per channel (uint32) |
-| **DAQmx Read (Counter DBL 1Chan 1Samp).vi**                               | task/channels in (DAQmx Task Resource), timeout (Double)                                                                                   | task out (DAQmx Task Resource), data (Double)            |
-| **DAQmx Timing (Implicit).vi**                                            | task/channels in (DAQmx Task Resource), sample mode (Enum), samples per channel (int32)                                                    | task out (DAQmx Task Resource)                           |
-| **DAQmx Start Task.vi**                                                   | task/channels in (DAQmx Task Resource)                                                                                                     | task out (DAQmx Task Resource)                           |
-| **DAQmx Stop Task.vi**                                                    | task/channels in (DAQmx Task Resource)                                                                                                     | task out (DAQmx Task Resource)                           |
-| **DAQmx Clear Task.vi**                                                   | task/channels in (DAQmx Task Resource)                                                                                                     | -                                                        |
-| **DAQmx Task >> Name**                                                    | task/channels in (DAQmx Task Resource)                                                                                                     | task out (DAQmx Task Resource), Name (DAQmx Task Resource) |
-| **DAQmx Channel >> Counter Input : Frequency : Input : Terminal**         | task/channels in (DAQmx Task Resource)                                                                                                     | task out (DAQmx Task Resource), CI.Freq.Term (NI Terminal Resource) |
-| **DAQmx Channel >> Counter Input : Frequency : Measurement Specifications : High Frequency : Measurement Time** | task/channels in (DAQmx Task Resource)                                                                                                     | task out (DAQmx Task Resource), CI.Freq.Meas.Time (Double) |
+| **DAQmx Create Task.vi**                                                  | - `task to copy` (DAQmx Task Resource) <br> - `global virtual channels` (DAQmx Global Channel Resource) <br> - `new task name` (String) <br> - `auto cleanup` (Bool) | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Create Channel (DO-Digital Output).vi**                           | - `task in` (DAQmx Task Resource) <br> - `lines` (DAQmx Physical Channel Resource) <br> - `name to assign` (String) <br> - `line grouping` (Enum)                     | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Create Channel (CI-Frequency).vi**                                | - `task in` (DAQmx Task Resource) <br> - `counter` (DAQmx Physical Channel Resource) <br> - `name to assign` (String) <br> - `units` (Enum) <br> - `custom scale name` (DAQmx Scale Resource) <br> - `starting edge` (Enum) <br> - `measurement time` (Double) <br> - `maximum value` (Double) <br> - `minimum value` (Double) <br> - `measurement method` (Enum) <br> - `divisor` (uint32) | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Write (Digital Bool 1Line 1Point).vi**                            | - `task/channels in` (DAQmx Task Resource) <br> - `data` (Bool) <br> - `timeout` (Double) <br> - `auto start` (Bool)                                                   | - `task out` (DAQmx Task Resource) <br> - `number of samples written per channel` (uint32) |
+| **DAQmx Read (Counter DBL 1Chan 1Samp).vi**                               | - `task/channels in` (DAQmx Task Resource) <br> - `timeout` (Double)                                                                                   | - `task out` (DAQmx Task Resource) <br> - `data` (Double)            |
+| **DAQmx Timing (Implicit).vi**                                            | - `task/channels in` (DAQmx Task Resource) <br> - `sample mode` (Enum) <br> - `samples per channel` (int32)                                                    | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Start Task.vi**                                                   | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Stop Task.vi**                                                    | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource)                           |
+| **DAQmx Clear Task.vi**                                                   | - `task/channels in` (DAQmx Task Resource)                                                                                                     | -                                                        |
+| **DAQmx Task >> Name**                                                    | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource) <br> - `Name` (DAQmx Task Resource) |
+| **DAQmx Channel >> Counter Input : Frequency : Input : Terminal**         | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource) <br> - `CI.Freq.Term` (NI Terminal Resource) |
+| **DAQmx Channel >> Counter Input : Frequency : Measurement Specifications : High Frequency : Measurement Time** | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource) <br> - `CI.Freq.Meas.Time` (Double) |
 
 ## Workflow
 
@@ -79,7 +78,7 @@ LabVIEW gRPC client will be created to access the NI GRPC device server for sess
 
 ## Scope
 
-This feature aims to provide a compatible/equivalent client to achieve the IS Pro compatible session management and session reuse by using the gRPC device server. Once implemented, the M-Plugin developers will be able to use DAQmx Client APIs with LabVIEW M-Plugins in IS and TS just like other natively supported instrumentation such as nidmm, nidcpower etc., from Measurement IO Palette.
+This feature aims to provide a client to achieve the IS Pro compatible session management and session reuse in LabVIEW measurement plug-ins by interfacing with the NI gRPC device server. Once implemented, the M-Plugin developers will be able to use DAQmx with LabVIEW M-Plugins in IS and TS just like other natively supported instrumentation such as nidmm, nidcpower etc.,
 
 ### NI DAQmx Client
 
@@ -172,6 +171,10 @@ service NiDAQmx {
 | **Close MeasurementLink Session.vi**  | - `session factory in` (class object) <br> - `initialize and close session behavior` (enum) <br> - `session in` (refnum) <br> - `remote connection options` (cluster)                                    | -                                                                                                                     | Use the `Clear Task` and `Destroy Client` methods within this VI to close tasks on the server.                                                                                                                                |
 
 1. Develop wrappers for each of the requested DAQmx functions, ensuring that their input and output connector panes closely match the format of the corresponding native driver functions.
+2. The session management library which has the session management VIs for NI DAQmx are as follows:
+Methods
+
+
 2. The replication of measurement plug-in session initialization wrapper for DAQmx `Initialize Session 1Sess.vi` and `Initialize Session NSess.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
 ![Initialize_Session(s)](Images/Initialize_Sessions.png)
 ![Create.vi](Images/Create_VI.png)
@@ -180,7 +183,3 @@ service NiDAQmx {
 
 1. Deploy the gRPC DAQmx client VIs to the `Measurement I/O > NI DAQmx gRPC` section of the LabVIEW functions palette via a VI package. 
 2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI DAQmx gRPC` directory.
-
-## Future Work Items
-
-1. Introduce support for a non-pin-centric workflow to enhance flexibility in session management.
