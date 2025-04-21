@@ -21,6 +21,7 @@
         - [NI DAQmx gRPC Client Creation](#ni-daqmx-grpc-client-creation)
         - [Session Management Implementation in Client](#session-management-implementation-in-client)
         - [DAQmx LabVIEW Client Deployment](#daqmx-labview-client-deployment)
+    - [Future Work Item](#future-work-item)
 
 ## Who
 
@@ -110,7 +111,11 @@ The gRPC Device server supports DAQmx functions; however, LabVIEW wrappers are n
     - The client provides an interface for users to call the DAQmx methods remotely.
     - This enables remote communication between the client and gRPC device server, allowing distributed systems to interact with the DAQmx API.
 3. **Client-Side Session Management Implementation**  
-    - After generating the gRPC client, implement session management by overriding the `ISession Factory` interface.  
+    - After generating the gRPC client, implement session management by overriding the `ISession Factory` interface methods which includes: 
+        - ***Initialize MeasurementLink Session.vi*** - Initializes the measurement plug-ins session for the instrument selected.
+        - ***Get Instrument Type ID.vi*** - Gets the instrument type ID mentioned in the pin map file for the selected instrument.
+        - ***Get Provided Interface and Service Class.vi*** - Returns the provided interface and service class that will be used to query the NI Discovery service for the address and port of the instrument's gRPC server.
+        - ***Close MeasurementLink Session.vi*** - Closes the local measurement plug-ins session.
     - This ensures proper initialization and closure of each session with the required configuration parameters.  
     - Develop high-level wrappers that replicate the connector panes of the LabVIEW DAQmx driver to provide a user-friendly interface.
 4. **DAQmx LabVIEW Client Deployment**
@@ -173,4 +178,9 @@ service NiDAQmx {
 
 ### DAQmx LabVIEW Client Deployment
 
-1. Deploy the gRPC DAQmx client wrapper VIs in the `Measurement I/O > NI DAQmx gRPC` section of the LabVIEW functions palette through a VI package.
+1. Deploy the gRPC DAQmx client VIs to the `Measurement I/O > NI DAQmx gRPC` section of the LabVIEW functions palette via a VI package. 
+2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI DAQmx gRPC` directory.
+
+## Future Work Items
+
+1. Introduce support for a non-pin-centric workflow to enhance flexibility in session management.
