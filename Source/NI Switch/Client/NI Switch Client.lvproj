@@ -20,6 +20,8 @@
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
+				<Item Name="niSwitch Relay Action.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Action.ctl"/>
+				<Item Name="niSwitch Relay Position.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Position.ctl"/>
 				<Item Name="niSwitch Topologies.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Topologies.ctl"/>
 			</Item>
 			<Item Name="vi.lib" Type="Folder">
