@@ -172,17 +172,17 @@ service NiDAQmx {
 | **Get Provided Interface and Service Class.vi** | - `session factory in` (class object)                                                                                                                                                                    | - `session factory out` (class object) <br> - `provided interface` (string) <br> - `service class` (string)           | Set the `provided interface` output to a string constant with the value `nidaqmx_grpc.NiDAQmx`. <br> Set the `service class` output to a string constant with the value `ni.measurementlink.v1.grpcdeviceserver`.               |
 | **Close MeasurementLink Session.vi**  | - `session factory in` (class object) <br> - `initialize and close session behavior` (enum) <br> - `session in` (refnum) <br> - `remote connection options` (cluster)                                    | -                                                                                                                     | Use the `Clear Task` and `Destroy Client` methods within this VI to close tasks on the server.                                                                                                                                |
 
-| **VI Name**                     | **Description**                                                                 |
-|----------------------------------|---------------------------------------------------------------------------------|
-| **Initialize Session 1Sess.vi** | Creates a single NI DAQmx driver task using the provided session reservation.    |
-| **Initialize Session NSess.vi** | Creates multiple NI DAQmx driver tasks using the provided session reservation.   |
-| **Initialize Sessions.vi**      | A polymorphic VI that combines `Initialize Session 1Sess.vi` and `Initialize Session NSess.vi`. |
-| **Instrument Type ID.vi**       | Returns a string constant representing the instrument type ID for NI DAQmx instruments. |
+| **VI Name**                | **Description**                                                                 |
+|----------------------------|---------------------------------------------------------------------------------|
+| **Initialize Task 1Task.vi** | Creates a single NI DAQmx driver task using the provided session reservation.    |
+| **Initialize Task NTask.vi** | Creates multiple NI DAQmx driver tasks using the provided session reservation.   |
+| **Initialize Tasks.vi**      | A polymorphic VI that combines `Initialize Task 1Task.vi` and `Initialize Task NTask.vi`. |
+| **Instrument Type ID.vi**    | Returns a string constant representing the instrument type ID for NI DAQmx instruments. |
 
 ![Session Management Library](Images/Session_Management_Library.png)
 
 1. Develop wrappers for each of the requested DAQmx functions, ensuring that their input and output connector panes closely match the format of the corresponding native driver functions.
-2. The replication of measurement plug-in session initialization wrapper for DAQmx `Initialize Session 1Sess.vi` and `Initialize Session NSess.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
+2. The replication of measurement plug-in session initialization wrapper for DAQmx `Initialize Task 1Task.vi` and `Initialize Task NTask.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
 ![Initialize_Session(s)](Images/Initialize_Sessions.png)
 ![Create.vi](Images/Create_VI.png)
 
