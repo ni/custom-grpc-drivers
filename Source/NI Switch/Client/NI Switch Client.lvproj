@@ -16,9 +16,12 @@
 			<Item Name="NI Switch_client.lvlib" Type="Library" URL="../NI Switch_client/NI Switch_client.lvlib"/>
 		</Item>
 		<Item Name="Session Management" Type="Folder">
-			<Item Name="NI Session Management niSwitch.lvlib" Type="Library" URL="../Session Management/NI Session Management niSwitch.lvlib"/>
+			<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../Session Management/Session Management niSwitch.lvlib"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="instr.lib" Type="Folder">
+				<Item Name="niSwitch Topologies.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Topologies.ctl"/>
+			</Item>
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
