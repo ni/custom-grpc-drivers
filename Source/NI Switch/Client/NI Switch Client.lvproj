@@ -12,6 +12,9 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Client Wrapper Functions" Type="Folder">
+			<Item Name="Client Wrapper Functions.lvlib" Type="Library" URL="../Client Wrapper Functions/Client Wrapper Functions.lvlib"/>
+		</Item>
 		<Item Name="NI Switch_client" Type="Folder">
 			<Item Name="NI Switch_client.lvlib" Type="Library" URL="../NI Switch_client/NI Switch_client.lvlib"/>
 		</Item>
