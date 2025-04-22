@@ -12,10 +12,10 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="NI_DAQmx_client" Type="Folder">
-			<Item Name="NI_DAQmx_client.lvlib" Type="Library" URL="../NI_DAQmx_client/NI_DAQmx_client.lvlib"/>
+			<Item Name="NI_DAQmx_client.lvlib" Type="Library" URL="../Client/NI_DAQmx_client/NI_DAQmx_client.lvlib"/>
 		</Item>
 		<Item Name="Session" Type="Folder">
-			<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="../../Session/Session Management niDAQmx.lvlib"/>
+			<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="../Session/Session Management niDAQmx.lvlib"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">

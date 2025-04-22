@@ -17,8 +17,13 @@
 </Property>
 	<Item Name="Session Factory.lvclass" Type="LVClass" URL="../Session Factory/Session Factory.lvclass"/>
 	<Item Name="Map Initialization Behaviour.vi" Type="VI" URL="../Map Initialization Behaviour.vi"/>
+	<Item Name="Connection with Session.ctl" Type="VI" URL="../Connection with Session.ctl"/>
 	<Item Name="Instrument Type ID.vi" Type="VI" URL="../Instrument Type ID.vi"/>
 	<Item Name="Initialize Tasks.vi" Type="VI" URL="../Initialize Tasks.vi"/>
 	<Item Name="Initialize Tasks - 1Task.vi" Type="VI" URL="../Initialize Tasks - 1Task.vi"/>
 	<Item Name="Initialize Tasks - NTask.vi" Type="VI" URL="../Initialize Tasks - NTask.vi"/>
+	<Item Name="Get Connections.vi" Type="VI" URL="../Get Connections.vi"/>
+	<Item Name="Get Connections - 1Pin 1Conn.vi" Type="VI" URL="../Get Connections - 1Pin 1Conn.vi"/>
+	<Item Name="Get Connections - 1Pin MConn.vi" Type="VI" URL="../Get Connections - 1Pin MConn.vi"/>
+	<Item Name="Get Connections - NPin MConn.vi" Type="VI" URL="../Get Connections - NPin MConn.vi"/>
 </Library>
