@@ -1,26 +1,25 @@
-# gRPC DAQmx LabVIEW - Temporary Solution
+# gRPC support for NI DAQmx Driver in LabVIEW - Temporary Solution
 
-- [gRPC DAQmx LabVIEW - Temporary Solution](#grpc-daqmx-labview---temporary-solution)
-    - [Who](#who)
-    - [Feature WorkItem](#feature-workitem)
-    - [Problem Statement](#problem-statement)
-    - [Proposed Solution](#proposed-solution)
-    - [Key Requirements](#key-requirements)
-    - [Requested NI DAQmx Functions and Property Nodes](#requested-ni-daqmx-functions-and-property-nodes)
-    - [Workflow](#workflow)
-        - [Vision](#vision)
-        - [User Workflow](#user-workflow)
-    - [Scope](#scope)
-        - [NI DAQmx Client](#ni-daqmx-client)
-        - [TestStand](#teststand)
-        - [Examples](#examples)
-        - [Deployment](#deployment)
-    - [Design & Implementation](#design--implementation)
-        - [Overview](#overview)
-        - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
-        - [NI DAQmx gRPC Client Creation](#ni-daqmx-grpc-client-creation)
-        - [Session Management Implementation in Client](#session-management-implementation-in-client)
-        - [DAQmx LabVIEW Client Deployment](#daqmx-labview-client-deployment)
+## Table of Contents
+- [gRPC support for NI DAQmx Driver in LabVIEW - Temporary Solution](#grpc-support-for-ni-daqmx-driver-in-labview---temporary-solution)
+  - [Table of Contents](#table-of-contents)
+  - [Who](#who)
+  - [Feature WorkItem](#feature-workitem)
+  - [Problem Statement](#problem-statement)
+  - [Proposed Solution](#proposed-solution)
+  - [Workflow](#workflow)
+  - [Key Requirements](#key-requirements)
+  - [Requested NI DAQmx Functions and Property Nodes](#requested-ni-daqmx-functions-and-property-nodes)
+  - [Scope](#scope)
+    - [NI DAQmx Client](#ni-daqmx-client)
+    - [TestStand](#teststand)
+    - [Examples](#examples)
+  - [Design \& Implementation](#design--implementation)
+    - [Overview](#overview)
+    - [Proto File for NI DAQmx Functions](#proto-file-for-ni-daqmx-functions)
+    - [NI DAQmx gRPC Client Creation](#ni-daqmx-grpc-client-creation)
+    - [Session Management Implementation in Client](#session-management-implementation-in-client)
+    - [DAQmx LabVIEW Client Deployment](#daqmx-labview-client-deployment)
 
 ## Who
 
@@ -39,13 +38,20 @@ NI gRPC device server supports session management and session reuse of NI DAQmx.
 
 LabVIEW gRPC client will be created to access the NI GRPC device server for session reuse across LabVIEW Measurement Plug-ins and the clients will be integrated with Session Management APIs to enable session management.
 
+## Workflow
+
+![Design_Flow](Images/Design_Flow.png/)
+
 ## Key Requirements
 
 1. **gRPC Client in LabVIEW:** Provide VIs for all gRPC server methods, ensuring connector pane matching and session management using class objects.
 2. **Examples:** Create LabVIEW and TestStand examples demonstrating DAQmx client usage and helper functions.
 3. **TestStand helper functions:** Offer helper functions (VIs) to enable session sharing across measurement plug-ins in the automation sequence example of this DAQmx gRPC driver.
 
+
 ## Requested NI DAQmx Functions and Property Nodes
+
+Client wrappers will be created for the below NI DAQmx functions and property nodes to interface with the NI gRPC device server, which will be exposed in the Measurement IO palette palette.
 
 | **NI DAQmx Functions & Property Nodes**                                   | **Inputs (Data Type)**                                                                                     | **Outputs (Data Type)**                                   |
 |:--------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------|:---------------------------------------------------------|
@@ -62,19 +68,6 @@ LabVIEW gRPC client will be created to access the NI GRPC device server for sess
 | **DAQmx Channel >> Counter Input : Frequency : Input : Terminal**         | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource) <br> - `CI.Freq.Term` (NI Terminal Resource) |
 | **DAQmx Channel >> Counter Input : Frequency : Measurement Specifications : High Frequency : Measurement Time** | - `task/channels in` (DAQmx Task Resource)                                                                                                     | - `task out` (DAQmx Task Resource) <br> - `CI.Freq.Meas.Time` (Double) |
 
-## Workflow
-
-<!--
-    Attach the workflow diagram
--->
-
-### Vision
-
-![alt text](image.png)
-
-### User Workflow
-
-![alt text](image.png)
 
 ## Scope
 
@@ -117,7 +110,9 @@ The gRPC Device server supports DAQmx functions; however, LabVIEW wrappers are n
         - ***Close MeasurementLink Session.vi*** - Closes the local measurement plug-ins session.
     - This ensures proper initialization and closure of each session with the required configuration parameters.  
     - Develop high-level wrappers that replicate the connector panes of the LabVIEW DAQmx driver to provide a user-friendly interface.
-4. **DAQmx LabVIEW Client Deployment**
+4. **Client Wrappers for all requested APIs**
+    - Develop client wrappers for each of the DAQmx functions defined above, ensuring they adhere to the expected input and output structures, and facilitate seamless communication with the gRPC server.
+5. **DAQmx LabVIEW Client Deployment**
     - A VI package that installs the DAQmx client methods in the target PC and adds the wrappers to the LabVIEW functions palette.
 
 ### Proto File for NI DAQmx Functions
@@ -163,7 +158,7 @@ service NiDAQmx {
 
 ### Session Management Implementation in Client
 
-1. The session management library includes the following VIs for managing NI DAQmx sessions:
+1. The session management library inherits the following VIs from ISession Factory for managing NI DAQmx sessions. The generate gRPC clients are called within the below VIs
 
 | **Method Name**                     | **Inputs**                                                                                                                                                                                                 | **Outputs**                                                                                                           | **Details**                                                                                                                                                                                                                     |
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -171,6 +166,8 @@ service NiDAQmx {
 | **Get Instrument Type ID.vi**         | - `session factory in` (class object)                                                                                                                                                                    | - `session factory out` (class object) <br> - `instrument type id` (string)                                           | Set the `instrument type id` output to a string constant with the value `NIDAQmx`.                                                                                                                                            |
 | **Get Provided Interface and Service Class.vi** | - `session factory in` (class object)                                                                                                                                                                    | - `session factory out` (class object) <br> - `provided interface` (string) <br> - `service class` (string)           | Set the `provided interface` output to a string constant with the value `nidaqmx_grpc.NiDAQmx`. <br> Set the `service class` output to a string constant with the value `ni.measurementlink.v1.grpcdeviceserver`.               |
 | **Close MeasurementLink Session.vi**  | - `session factory in` (class object) <br> - `initialize and close session behavior` (enum) <br> - `session in` (refnum) <br> - `remote connection options` (cluster)                                    | -                                                                                                                     | Use the `Clear Task` and `Destroy Client` methods within this VI to close tasks on the server.                                                                                                                                |
+
+2. Below VIs are Driver specific wrappers in the session management library that are specific to the NI DAQmx driver, which will be exposed in the Measurement IO Palette to the user.
 
 | **VI Name**                | **Description**                                                                 |
 |----------------------------|---------------------------------------------------------------------------------|
@@ -189,4 +186,4 @@ service NiDAQmx {
 ### DAQmx LabVIEW Client Deployment
 
 1. Deploy the gRPC DAQmx client VIs to the `Measurement I/O > NI DAQmx gRPC` section of the LabVIEW functions palette via a VI package. 
-2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI DAQmx gRPC` directory.
+2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\vi.lib\NI DAQmx gRPC Client` directory.
