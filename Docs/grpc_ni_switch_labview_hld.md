@@ -175,19 +175,19 @@ service NiSwitch {
 
 | **VI Name**                | **Description**                                                                 |
 |----------------------------|---------------------------------------------------------------------------------|
-| **Initialize Sess 1Sess.vi** | Creates a single NI Switch driver Session using the provided session reservation.    |
-| **Initialize Sess NSess.vi** | Creates multiple NI Switch driver Session using the provided session reservation.   |
+| **Initialize Sessions 1Sess.vi** | Creates a single NI Switch driver Session using the provided session reservation.    |
+| **Initialize Sessions NSess.vi** | Creates multiple NI Switch driver Session using the provided session reservation.   |
 | **Initialize Sessions.vi**      | A polymorphic VI that combines `Initialize Sess 1Sess.vi` and `Initialize Sess NSess.vi`. |
 | **Instrument Type ID.vi**    | Returns a string constant representing the instrument type ID for NI Switch instruments. |
 
 ![Session Management Library](Images/Session_Management_Library.png)
 
-1. Develop wrappers for each of the requested Switch functions, ensuring that their input and output connector panes closely match the format of the corresponding native driver functions.
-2. The replication of measurement plug-in session initialization wrapper for Switch `Initialize Sess 1Sess.vi` and `Initialize Sess NSess.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
-![Initialize_Session(s)](Images/Initialize_Sessions.png)
-![Create.vi](Images/Create_VI.png)
+3. Develop wrappers for each of the requested Switch functions, ensuring that their input and output connector panes closely match the format of the corresponding native driver functions.
+4. The replication of measurement plug-in session initialization wrapper for Switch `Initialize Sess 1Sess.vi` and `Initialize Sess NSess.vi` includes a `Create.vi` and the measurement plug-in `NI Session Management V1 Client.lvlib: Session Reservation.lvclass: Initialize Session(s).vim`. We need to develop the `Create.vi` to use it in the initialization wrapper.  
+![Initialize_Session(s)](Images/Switch_Initialize_Sessions.png)
+![Create.vi](Images/Switch_Create_VI.png)
 
 ### Switch LabVIEW Client Deployment
 
-1. Deploy the gRPC Switch client VIs to the `Measurement I/O > NI Switch gRPC` section of the LabVIEW functions palette via a VI package. 
-2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\vi.lib\NI Switch gRPC Client` directory.
+1. Deploy the gRPC Switch client VIs to the `Measurement I/O > Custom gRPC Driver Clients > NI Switch gRPC` section of the LabVIEW functions palette via a VI package. 
+2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI Switch gRPC Client` directory.
