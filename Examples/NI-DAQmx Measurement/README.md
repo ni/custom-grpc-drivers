@@ -1,1 +1,0 @@
-# NI-DAQmx Measurement
