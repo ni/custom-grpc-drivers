@@ -1,5 +1,6 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Library LVVersion="21008000">
+	<Property Name="NI.Lib.DefaultMenu" Type="Str">NI Switch gRPC.mnu</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*,!!!*Q(C=\&gt;5P=BMR&amp;-@R8T-"J7;"':/#QH=&amp;X[$DE0"X"=-N.#M+?&amp;.=9G\E+\QL?(+!T$AQU0F+_WSX*%P;4DM4+@+@HV&lt;3RVL.2OLFIX3NYV1:XCT(IY:"1XO2RECH0IX^'M:[+@KF@V#.\UG`&gt;PT;XC\THZ9ZP9U@T`U;"_H57]N/_[@[*YL?SXPZP]P8S50_R]`["\5(%3VJ18/;K3VZ40)E4`)E4`)E$`)A$`)A$`)A&gt;X)H&gt;X)H&gt;X)H.X)D.X)D.X)D\Z6=Z#)8/;2E]73B:.*EAO2C+%J?%E`C34S*B[^+0)EH]33?R--F3DS**`%EHM4$-#7?R*.Y%E`C9;IOS6\*]31?JF@A#4S"*`!%(J:5Y!E!Q7,"R-%E-"2U"B]#4_!*0(R5Y!E]A3@Q""[[&amp;8A#4_!*0)'()8V8IGN;*=@$.()]DM@R/"\(Q^2S0)\(]4A?R].S=DS/RU%Y#TK41Z!TS,H!_?*Y(!^P=DS/R`%Y(M&gt;$6\^$XH?G;6IFRW.Y$)`B-4S'BSFE?!S0Y4%]BI&gt;J:8A-D_%R0);(J72Y$)`B-3$'ICQP9T*DI('2%2A?`PJJM8[8IEOM6[E/L_J1KA[&lt;[B#J$I@KJKNOJOIGK4:@N;GKT6*NAOL(K&gt;!KD'I2V?"WI1[]\GE\WI;WJKVI3^K#.K@.WN$@@/(B=."_P^&gt;ON^.GM^&amp;[P&gt;:KN&gt;*SO&gt;2CM&gt;"]0N&gt;M.DM`"G[JZQ@#Z&lt;GU`@&lt;Y`$#]00`Y`O84^OHO;8NT``EP`1`_"Z[.ON,0]\.(L\!Z@^E!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
@@ -13,4 +14,5 @@
 	<Item Name="Initialize Sessions - NSess.vi" Type="VI" URL="../Initialize Sessions - NSess.vi"/>
 	<Item Name="Initialize Sessions.vi" Type="VI" URL="../Initialize Sessions.vi"/>
 	<Item Name="Instrument Type ID.vi" Type="VI" URL="../Instrument Type ID.vi"/>
+	<Item Name="NI Switch gRPC.mnu" Type="Document" URL="../NI Switch gRPC.mnu"/>
 </Library>
