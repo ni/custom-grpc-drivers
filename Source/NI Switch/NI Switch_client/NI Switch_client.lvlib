@@ -9,62 +9,106 @@
 
 </Property>
 	<Item Name="RPC Messages" Type="Folder">
-		<Item Name="nidevice_grpc_Session" Type="Folder">
-			<Item Name="nidevice_grpc_Session.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session.ctl"/>
-			<Item Name="nidevice_grpc_Session_session.lvclass" Type="LVClass" URL="../RPC Messages/nidevice_grpc_Session_session/nidevice_grpc_Session_session.lvclass"/>
-			<Item Name="FlatToRichnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/FlatToRichnidevice_grpc_Session.vi"/>
-			<Item Name="RichToFlatnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/RichToFlatnidevice_grpc_Session.vi"/>
-		</Item>
 		<Item Name="niswitch_grpc_InitWithTopologyRequest" Type="Folder">
 			<Item Name="niswitch_grpc_InitWithTopologyRequest.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyRequest.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_InitWithTopologyRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_InitWithTopologyRequest.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_InitWithTopologyRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_InitWithTopologyRequest.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_InitWithTopologyRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_InitWithTopologyRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_InitWithTopologyRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_InitWithTopologyRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_InitWithTopologyResponse" Type="Folder">
 			<Item Name="niswitch_grpc_InitWithTopologyResponse.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyResponse.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_InitWithTopologyResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_InitWithTopologyResponse.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_InitWithTopologyResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_InitWithTopologyResponse.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_InitWithTopologyResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_InitWithTopologyResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_InitWithTopologyResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_InitWithTopologyResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_RelayControlRequest" Type="Folder">
 			<Item Name="niswitch_grpc_RelayControlRequest.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlRequest.ctl"/>
 			<Item Name="niswitch_grpc_RelayControlRequest_relay_action_enum.lvclass" Type="LVClass" URL="../RPC Messages/niswitch_grpc_RelayControlRequest_relay_action_enum/niswitch_grpc_RelayControlRequest_relay_action_enum.lvclass"/>
-			<Item Name="FlatToRichniswitch_grpc_RelayControlRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_RelayControlRequest.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_RelayControlRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_RelayControlRequest.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_RelayControlRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_RelayControlRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_RelayControlRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_RelayControlRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_RelayControlResponse" Type="Folder">
 			<Item Name="niswitch_grpc_RelayControlResponse.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlResponse.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_RelayControlResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_RelayControlResponse.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_RelayControlResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_RelayControlResponse.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_RelayControlResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_RelayControlResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_RelayControlResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_RelayControlResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_GetRelayPositionRequest" Type="Folder">
 			<Item Name="niswitch_grpc_GetRelayPositionRequest.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionRequest.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_GetRelayPositionRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_GetRelayPositionRequest.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_GetRelayPositionRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_GetRelayPositionRequest.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_GetRelayPositionRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_GetRelayPositionRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_GetRelayPositionRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_GetRelayPositionRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_GetRelayPositionResponse" Type="Folder">
 			<Item Name="niswitch_grpc_GetRelayPositionResponse.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionResponse.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_GetRelayPositionResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_GetRelayPositionResponse.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_GetRelayPositionResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_GetRelayPositionResponse.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_GetRelayPositionResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_GetRelayPositionResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_GetRelayPositionResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_GetRelayPositionResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_WaitForDebounceRequest" Type="Folder">
 			<Item Name="niswitch_grpc_WaitForDebounceRequest.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceRequest.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_WaitForDebounceRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_WaitForDebounceRequest.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_WaitForDebounceRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_WaitForDebounceRequest.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_WaitForDebounceRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_WaitForDebounceRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_WaitForDebounceRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_WaitForDebounceRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_WaitForDebounceResponse" Type="Folder">
 			<Item Name="niswitch_grpc_WaitForDebounceResponse.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceResponse.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_WaitForDebounceResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_WaitForDebounceResponse.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_WaitForDebounceResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_WaitForDebounceResponse.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_WaitForDebounceResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_WaitForDebounceResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_WaitForDebounceResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_WaitForDebounceResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_CloseRequest" Type="Folder">
 			<Item Name="niswitch_grpc_CloseRequest.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseRequest.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_CloseRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_CloseRequest.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_CloseRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_CloseRequest.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_CloseRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_CloseRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_CloseRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_CloseRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_CloseResponse" Type="Folder">
 			<Item Name="niswitch_grpc_CloseResponse.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseResponse.ctl"/>
-			<Item Name="FlatToRichniswitch_grpc_CloseResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_CloseResponse.vi"/>
-			<Item Name="RichToFlatniswitch_grpc_CloseResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_CloseResponse.vi"/>
+			<Item Name="FlatToRichniswitch_grpc_CloseResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichniswitch_grpc_CloseResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatniswitch_grpc_CloseResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatniswitch_grpc_CloseResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_Session" Type="Folder">
+			<Item Name="nidevice_grpc_Session.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session.ctl"/>
+			<Item Name="nidevice_grpc_Session_session.lvclass" Type="LVClass" URL="../RPC Messages/nidevice_grpc_Session_session/nidevice_grpc_Session_session.lvclass"/>
+			<Item Name="FlatToRichnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/FlatToRichnidevice_grpc_Session.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/RichToFlatnidevice_grpc_Session.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidevice_grpc_SessionInitializationBehavior" Type="Folder">
 			<Item Name="nidevice_grpc_SessionInitializationBehavior.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior.ctl"/>
@@ -81,38 +125,60 @@
 			<Item Name="Get Value for niswitch_grpc_RelayPosition.vi" Type="VI" URL="../RPC Messages/Get Value for niswitch_grpc_RelayPosition.vi"/>
 			<Item Name="Get niswitch_grpc_RelayPosition for Value.vi" Type="VI" URL="../RPC Messages/Get niswitch_grpc_RelayPosition for Value.vi"/>
 		</Item>
-		<Item Name="nidevice_grpc_Session_Flat" Type="Folder">
-			<Item Name="nidevice_grpc_Session_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session_Flat.ctl"/>
-		</Item>
 		<Item Name="niswitch_grpc_InitWithTopologyRequest_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_InitWithTopologyRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyRequest_Flat.ctl"/>
+			<Item Name="niswitch_grpc_InitWithTopologyRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_InitWithTopologyResponse_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_InitWithTopologyResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyResponse_Flat.ctl"/>
+			<Item Name="niswitch_grpc_InitWithTopologyResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_InitWithTopologyResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_RelayControlRequest_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_RelayControlRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlRequest_Flat.ctl"/>
+			<Item Name="niswitch_grpc_RelayControlRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_RelayControlResponse_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_RelayControlResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlResponse_Flat.ctl"/>
+			<Item Name="niswitch_grpc_RelayControlResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_RelayControlResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_GetRelayPositionRequest_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_GetRelayPositionRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionRequest_Flat.ctl"/>
+			<Item Name="niswitch_grpc_GetRelayPositionRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_GetRelayPositionResponse_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_GetRelayPositionResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionResponse_Flat.ctl"/>
+			<Item Name="niswitch_grpc_GetRelayPositionResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_GetRelayPositionResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_WaitForDebounceRequest_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_WaitForDebounceRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceRequest_Flat.ctl"/>
+			<Item Name="niswitch_grpc_WaitForDebounceRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_WaitForDebounceResponse_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_WaitForDebounceResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceResponse_Flat.ctl"/>
+			<Item Name="niswitch_grpc_WaitForDebounceResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_WaitForDebounceResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_CloseRequest_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_CloseRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseRequest_Flat.ctl"/>
+			<Item Name="niswitch_grpc_CloseRequest_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="niswitch_grpc_CloseResponse_Flat" Type="Folder">
-			<Item Name="niswitch_grpc_CloseResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseResponse_Flat.ctl"/>
+			<Item Name="niswitch_grpc_CloseResponse_Flat.ctl" Type="VI" URL="../RPC Messages/niswitch_grpc_CloseResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_Session_Flat" Type="Folder">
+			<Item Name="nidevice_grpc_Session_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat" Type="Folder">
 			<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior_Flat.ctl"/>
@@ -129,7 +195,9 @@
 			<Item Name="Get Value for niswitch_grpc_RelayPosition_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for niswitch_grpc_RelayPosition_Flat.vi"/>
 			<Item Name="Get niswitch_grpc_RelayPosition_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get niswitch_grpc_RelayPosition_Flat for Value.vi"/>
 		</Item>
-		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
+		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+		</Item>
 	</Item>
 	<Item Name="RPC Service" Type="Folder">
 		<Item Name="NiSwitch" Type="Folder">
@@ -154,5 +222,4 @@
 		<Item Name="Create Client.vi" Type="VI" URL="../Client API/Create Client.vi"/>
 		<Item Name="Destroy Client.vi" Type="VI" URL="../Client API/Destroy Client.vi"/>
 	</Item>
-	<Item Name="gRPC Client Test.vi" Type="VI" URL="../gRPC Client Test.vi"/>
 </Library>
