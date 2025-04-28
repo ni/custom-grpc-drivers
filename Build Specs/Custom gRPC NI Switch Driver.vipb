@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-04-23 16:37:18" Modified_Date="2025-04-26 14:44:10" Creator="lvadmin" Comments="" ID="faa576c64e387b82cafc6f788482d8a1">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-04-23 16:37:18" Modified_Date="2025-04-28 13:46:52" Creator="lvadmin" Comments="" ID="46cdae6a43513ac84c2fd7a2f9276076">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_switch_driver</Package_File_Name>
     <Library_Version>1.0.0.1</Library_Version>
@@ -43,7 +43,7 @@
       <Toolkit_VIs>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path/>
+        <Path>&lt;vi.lib&gt;\Plug-In SDKs\Sessions</Path>
       </Toolkit_VIs>
       <Examples>
         <LLB>false</LLB>
@@ -99,12 +99,6 @@
         <Path/>
       </QuickDrop_Plugins>
       <Additional_Destination>
-        <Name>Instrument Drivers</Name>
-        <LLB>false</LLB>
-        <Preserve_Hierarchy>true</Preserve_Hierarchy>
-        <Path>&lt;instr.lib&gt;\NI Switch gRPC Client</Path>
-      </Additional_Destination>
-      <Additional_Destination>
         <Name>Palette Files</Name>
         <LLB>false</LLB>
         <Preserve_Hierarchy>true</Preserve_Hierarchy>
@@ -119,21 +113,21 @@
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>NI Switch/NI Switch_client</Path>
+        <Path>Sessions</Path>
         <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
         <Path>Shared/Palette Files/Measurement</Path>
         <Destination>0</Destination>
         <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>1</Additional_Destination_Index>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>NI Switch/Sessions</Path>
+        <Path>Sessions/niSwitch</Path>
         <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Password_Overrides>
@@ -150,13 +144,13 @@
         <Path>NI Switch Executive</Path>
       </Exclusions>
       <Exclusions>
-        <Path>NI Switch/Protos</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>NI Switch/NI Switch Client.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>Shared/Imports</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Sessions/niSwitch/Proto</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Sessions/niSwitch/NI Switch gRPC Client.lvproj</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
