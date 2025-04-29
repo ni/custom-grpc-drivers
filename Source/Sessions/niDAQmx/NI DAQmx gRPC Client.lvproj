@@ -11,12 +11,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="NI_DAQmx_client" Type="Folder">
+		<Item Name="NI DAQmx Client" Type="Folder">
 			<Item Name="NI_DAQmx_client.lvlib" Type="Library" URL="../NI DAQmx Client/NI_DAQmx_client.lvlib"/>
 		</Item>
-		<Item Name="Sessions" Type="Folder">
-			<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="../Session Management niDAQmx.lvlib"/>
-		</Item>
+		<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="../Session Management niDAQmx.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="1D String Array to Delimited String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/1D String Array to Delimited String.vi"/>
