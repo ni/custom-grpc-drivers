@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.ni.grpc.niswitch";
+option java_outer_classname = "NiSwitch";
+option csharp_namespace = "NationalInstruments.Grpc.Switch";
+
+package niswitch_grpc;
+
+import "session.proto";
+
+service NiSwitch {
+    rpc InitWithTopology(InitWithTopologyRequest) returns (InitWithTopologyResponse);
+    rpc RelayControl(RelayControlRequest) returns (RelayControlResponse);
+    rpc GetRelayPosition(GetRelayPositionRequest) returns (GetRelayPositionResponse);
+    rpc WaitForDebounce(WaitForDebounceRequest) returns (WaitForDebounceResponse);
+    rpc Close(CloseRequest) returns (CloseResponse);
+}
+
+enum RelayAction {
+    RELAY_ACTION_UNSPECIFIED = 0;
+    RELAY_ACTION_NISWITCH_VAL_OPEN_RELAY = 20;
+    RELAY_ACTION_NISWITCH_VAL_CLOSE_RELAY = 21;
+}
+
+enum RelayPosition {
+    RELAY_POSITION_UNSPECIFIED = 0;
+    RELAY_POSITION_NISWITCH_VAL_OPEN = 10;
+    RELAY_POSITION_NISWITCH_VAL_CLOSED = 11;
+}
+
+message InitWithTopologyRequest {
+    string session_name = 1;
+    string resource_name = 2;
+    string topology = 3;
+    bool simulate = 4;
+    bool reset_device = 5;
+    nidevice_grpc.SessionInitializationBehavior initialization_behavior = 6;
+}
+  
+message InitWithTopologyResponse {
+    int32 status = 1;
+    nidevice_grpc.Session vi = 2;
+    string error_message = 3 [deprecated = true];
+    bool new_session_initialized = 4;
+}
+
+message RelayControlRequest {
+    nidevice_grpc.Session vi = 1;
+    string relay_name = 2;
+    oneof relay_action_enum {
+        RelayAction relay_action = 3;
+        sint32 relay_action_raw = 4;
+    }
+}
+  
+message RelayControlResponse {
+    int32 status = 1;
+}
+
+message GetRelayPositionRequest {
+    nidevice_grpc.Session vi = 1;
+    string relay_name = 2;
+}
+  
+message GetRelayPositionResponse {
+    int32 status = 1;
+    RelayPosition relay_position = 2;
+    sint32 relay_position_raw = 3;
+}
+
+message WaitForDebounceRequest {
+    nidevice_grpc.Session vi = 1;
+    sint32 maximum_time_ms = 2;
+}
+  
+message WaitForDebounceResponse {
+    int32 status = 1;
+}
+
+message CloseRequest {
+    nidevice_grpc.Session vi = 1;
+}
+  
+message CloseResponse {
+    int32 status = 1;
+}
