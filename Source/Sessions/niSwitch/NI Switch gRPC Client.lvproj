@@ -13,12 +13,10 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Sessions" Type="Folder">
-			<Item Name="NI Switch Client" Type="Folder">
-				<Item Name="NI Switch Client.lvlib" Type="Library" URL="../NI Switch Client/NI Switch Client.lvlib"/>
-			</Item>
-			<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../Session Management niSwitch.lvlib"/>
+		<Item Name="NI Switch Client" Type="Folder">
+			<Item Name="NI Switch Client.lvlib" Type="Library" URL="../NI Switch Client/NI Switch Client.lvlib"/>
 		</Item>
+		<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../Session Management niSwitch.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="grpc-lvsupport-release.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/LabVIEW gRPC Library/grpc-lvsupport-release.lvlib"/>
