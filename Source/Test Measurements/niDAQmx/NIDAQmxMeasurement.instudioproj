@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="0EDA0BB3E71AE63E7FA4251B58C0FD123ED7B6F21CA4085359BDFC8460DD48432F95CE878942D196FA0D369AFFE0E0C258A2AA7EED1A05ED7FA04415F0A0815A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="25.0.0.49535" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="9.15.0.49535" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="25.0.0.49535" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="25.0.0.49535" />
+	</SourceModelFeatureSet>
+	<Project xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="379a41a35c79436898f58c3aab89a10b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="db624151ae8044bd9c7d4ecfadb084fb" ModelDefinitionType="NationalInstruments.ProjectExplorer.Modeling.ProjectDataManager" Name="ProjectExplorer">
+			<ProjectExplorer />
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="b33271c1a35144d089d0307cc4f1e31f" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
+			<DefaultTarget />
+			<FileReference Id="4285ccb503a14235b4a2556a077d28ea" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="NIDAQmxMeasurement.pinmap" StoragePath="NIDAQmxMeasurement.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+		</NameScopingEnvoy>
+	</Project>
+	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework">
+		<p.ProjectProperties>
+			<Kind Name="plugin.reference">
+				<Item Name="DAQmxMeasurement1_LabVIEW" Value="1.0.0" />
+				<Item Name="ni.examples.NIDCPowerSourceDCVoltage_LabVIEW" Value="1.0.0" />
+				<Item Name="NIDAQmxMeasurement_LabVIEW" Value="1.0.0" />
+			</Kind>
+		</p.ProjectProperties>
+	</ProjectInformation>
+</SourceFile>
