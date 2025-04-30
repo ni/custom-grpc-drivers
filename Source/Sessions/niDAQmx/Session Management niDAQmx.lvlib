@@ -7,6 +7,7 @@
 	<Property Name="EndevoGOOP_ColorTextBody" Type="UInt">1</Property>
 	<Property Name="EndevoGOOP_ColorTextHeader" Type="UInt">16448250</Property>
 	<Property Name="EndevoGOOP_FrameThickness" Type="UInt">1</Property>
+	<Property Name="NI.Lib.DefaultMenu" Type="Str">NI DAQmx gRPC.mnu</Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">)1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!*!!!!*Q(C=\&gt;7^&lt;2N"%)&lt;BTY9$J_T!9!M$2E\:A)/,F%],4#^E!QKG!#5%H*F1Q"9'=+31,6Q,JX&gt;89`YE:G)&lt;BM"&gt;,HH]&lt;H]?\2V05C_@J5_;&lt;Z8RNW7?.9ZKF=_RN&lt;?DC`-;,WO^,M?@?_D8?&gt;7BTP/@RZ]38F@L^_SKNW\\&lt;R4&gt;S\W]\X,\2`$8@Q=@V"Z%N+1&amp;T7H7@PW;ETT*ETT*ETT*ATT)ATT)ATT)H&gt;T*H&gt;T*H&gt;T*D&gt;T)D&gt;T)D&gt;T)?S58O=B&amp;$CF:0&amp;EIG43:)/E-2=F&lt;YEE]C3@R]&amp;7**`%EHM34?/CCR*.Y%E`C34Q-5_**0)EH]31?JOK3\*5=4_*B?A7?Q".Y!E`A95E&amp;HA!1,":-(%Q#1](*Y#$Q"*\!Q[%#4_!*0)%H](";A3@Q"*\!%XA9UH=FOK:6=DR-)]@D?"S0YX%]4#X(YXA=D_.R0#QHR_.Y()3TI$-Z"$G$H!\/&amp;]@D?0C1YX%]DM@R/"Z/^3PE@7?;JF6S0)&lt;(]"A?QW.YG%+'R`!9(M.D?*B7BM@Q'"\$9XB93I&lt;(]"A?!W)MSP)S*D-''JW-Q0$Q[H?,^;M587+^3H8TKGZ+V=WGOIF5.Y@KIKMOJOICK4:@N;GKT6*NAOK05[&amp;6'.5CKM'NIS&lt;?D\1$&lt;5@&lt;UD;UA&lt;;G,7G,.P10&gt;ZSG3=@D59@$1&lt;P&gt;4NPN6JP.2M-Q;,V?;\F=;L&amp;9H"Y$8[CH"],ZO&lt;4`_H._(*\HJW]`6PPB_]._^4,]I``0`]'T52^VO1:\^!L9`'#(!!!!!!</Property>
 	<Property Name="NI.Lib.SourceVersion" Type="Int">553680896</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
@@ -25,4 +26,5 @@
 	<Item Name="Get Connections - 1Pin 1Conn.vi" Type="VI" URL="../Get Connections - 1Pin 1Conn.vi"/>
 	<Item Name="Get Connections - 1Pin MConn.vi" Type="VI" URL="../Get Connections - 1Pin MConn.vi"/>
 	<Item Name="Get Connections - NPin MConn.vi" Type="VI" URL="../Get Connections - NPin MConn.vi"/>
+	<Item Name="NI DAQmx gRPC.mnu" Type="Document" URL="../NI DAQmx gRPC.mnu"/>
 </Library>
