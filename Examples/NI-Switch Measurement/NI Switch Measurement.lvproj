@@ -16,6 +16,11 @@
 		<Item Name="NI Switch Measurement.lvlib" Type="Library" URL="../NI Switch Measurement/NI Switch Measurement.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
+				<Item Name="niDCPower Attach gRPC session.vi" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower Attach gRPC session.vi"/>
+				<Item Name="niDCPower Close.vi" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower Close.vi"/>
+				<Item Name="niDCPower Detach gRPC session.vi" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower Detach gRPC session.vi"/>
+				<Item Name="niDCPower gRPC Device Server.ctl" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower gRPC Device Server.ctl"/>
+				<Item Name="niDCPower Initialize With Independent Channels for gRPC session.vi" Type="VI" URL="/&lt;instrlib&gt;/niDCPower/nidcpower.llb/niDCPower Initialize With Independent Channels for gRPC session.vi"/>
 				<Item Name="niSwitch Relay Action.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Action.ctl"/>
 				<Item Name="niSwitch Relay Position.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Relay Position.ctl"/>
 				<Item Name="niSwitch Topologies.ctl" Type="VI" URL="/&lt;instrlib&gt;/niSwitch/niSwitch.llb/niSwitch Topologies.ctl"/>
@@ -60,7 +65,9 @@
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI Discovery V1 Client.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Clients/Discovery V1/NI Discovery V1 Client.lvlib"/>
 				<Item Name="NI Measurement Plug-In SDK.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Measurements/NI Measurement Plug-In SDK.lvlib"/>
+				<Item Name="NI Pin Map TestStand.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/TestStand/NI Pin Map TestStand.lvlib"/>
 				<Item Name="NI Session Management Instrument.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Sessions/Instrument/NI Session Management Instrument.lvlib"/>
+				<Item Name="NI Session Management niDCPower.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Sessions/niDCPower/NI Session Management niDCPower.lvlib"/>
 				<Item Name="NI Session Management V1 Client.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Clients/Session Management V1/NI Session Management V1 Client.lvlib"/>
 				<Item Name="ni.measurementlink.discovery.v1.api.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/Generated APIs/ni/measurementlink/discovery/v1/ni.measurementlink.discovery.v1.api.lvlib"/>
 				<Item Name="ni.measurementlink.measurement.v1.api.lvlib" Type="Library" URL="/&lt;vilib&gt;/gRPC/Generated APIs/ni/measurementlink/measurement/v1/ni.measurementlink.measurement.v1.api.lvlib"/>
@@ -91,10 +98,13 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="NI Switch Client.lvlib" Type="Library" URL="../../../Source/Sessions/niSwitch/NI Switch Client/NI Switch Client.lvlib"/>
+			<Item Name="nidcpower_64.dll" Type="Document" URL="nidcpower_64.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../../../Source/Sessions/niSwitch/Session Management niSwitch.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="NI Switch Measurement" Type="EXE">
+			<Item Name="NI-Switch Measurement" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{190D8ED0-0D4F-4E1F-9E06-E55C961F02A9}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{0416073A-CC49-4B6A-B16F-DF52FF946314}</Property>
@@ -102,24 +112,25 @@
 				<Property Name="App_serverType" Type="Int">0</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{2E176AC3-378E-4985-ABBD-8F660CAD6E44}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">NI Switch Measurement</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">NI-Switch Measurement</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI Switch Measurement</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/build_output/NISwitchMeasurement</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/NI Switch Measurement.lvlib/Advanced/Build Assets/Post-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{1DFAA398-F6BD-4FF5-BC7F-7CBE6C3B5EC7}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">NISwitchMeasurement.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/NI Switch Measurement/NISwitchMeasurement.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">NI-SwitchMeasurement.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/build_output/NISwitchMeasurement/NI-SwitchMeasurement.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/NI Switch Measurement/data</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/build_output/NISwitchMeasurement/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BAB8DE0B-2D8A-44C2-B72E-B05AD5404F6D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B7501287-0B57-48E2-A32F-49C3D16082C7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NI Switch Measurement.lvlib/Get Service Descriptor.vi</Property>
@@ -153,20 +164,20 @@
 				<Property Name="Source[7].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[7].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">8</Property>
-				<Property Name="TgtF_companyName" Type="Str">Soliton Technologies Pvt Ltd</Property>
+				<Property Name="TgtF_companyName" Type="Str">National Instruments Corporation</Property>
 				<Property Name="TgtF_fastFileFormat" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">NI Switch Measurement</Property>
-				<Property Name="TgtF_internalName" Type="Str">NI Switch Measurement</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 Soliton Technologies Pvt Ltd</Property>
-				<Property Name="TgtF_productName" Type="Str">NI Switch Measurement</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">NI-Switch Measurement</Property>
+				<Property Name="TgtF_internalName" Type="Str">NI-Switch Measurement</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 National Instruments Corporation</Property>
+				<Property Name="TgtF_productName" Type="Str">NI-Switch Measurement</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{A8492DAE-503C-4B42-8D2B-C4C410AE874C}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">NISwitchMeasurement.exe</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">NI-SwitchMeasurement.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NI Switch Measurement UI" Type="Packed Library">
+			<Item Name="NI-Switch Measurement UI" Type="Packed Library">
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{C5C903AD-AA45-4B21-B148-C7F743DC8F7B}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">NI Switch Measurement UI</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">NI-Switch Measurement UI</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
 				<Property Name="Bld_localDestDir" Type="Path">../NI_AB_PROJECTNAME/BuiltUI</Property>
@@ -175,7 +186,7 @@
 				<Property Name="Bld_previewCacheID" Type="Str">{9CE9087E-AE74-47A3-B101-BF2116B1D5EB}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NI Switch Measurement UI.lvlibp</Property>
-				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/BuiltUI/NI Switch Measurement UI.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../NI_AB_PROJECTNAME/BuiltUI/NI-Switch Measurement UI.lvlibp</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
@@ -184,7 +195,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{BAB8DE0B-2D8A-44C2-B72E-B05AD5404F6D}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B7501287-0B57-48E2-A32F-49C3D16082C7}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NI Switch Measurement UI.lvlib</Property>
@@ -195,11 +206,11 @@
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">Soliton Technologies Pvt Ltd</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">NI Switch Measurement UI</Property>
-				<Property Name="TgtF_internalName" Type="Str">NI Switch Measurement UI</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 Soliton Technologies Pvt Ltd</Property>
-				<Property Name="TgtF_productName" Type="Str">NI Switch Measurement UI</Property>
+				<Property Name="TgtF_companyName" Type="Str">National Instruments Corporation</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="TgtF_internalName" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 National Instruments Corporation</Property>
+				<Property Name="TgtF_productName" Type="Str">NI-Switch Measurement UI</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{732EC3D9-6E6A-4F7F-A194-C83ADB9886B6}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">NI Switch Measurement UI.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
