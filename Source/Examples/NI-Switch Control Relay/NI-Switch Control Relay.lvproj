@@ -91,8 +91,8 @@
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="NI Switch Client.lvlib" Type="Library" URL="../../../Source/Sessions/niSwitch/NI Switch Client/NI Switch Client.lvlib"/>
-			<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../../../Source/Sessions/niSwitch/Session Management niSwitch.lvlib"/>
+			<Item Name="NI Switch Client.lvlib" Type="Library" URL="../../../Sessions/niSwitch/NI Switch Client/NI Switch Client.lvlib"/>
+			<Item Name="Session Management niSwitch.lvlib" Type="Library" URL="../../../Sessions/niSwitch/Session Management niSwitch.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="NI-Switch Measurement" Type="EXE">
