@@ -175,6 +175,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{36EABA4C-164C-4476-8114-5E1A10CBA3A2}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NI-Switch Measurement UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../NI-Switch Measurement/BuiltUI/NI-Switch Measurement UI.lvlibp</Property>
