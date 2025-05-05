@@ -12,6 +12,7 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="NI-Switch Control Relay UI.lvlib" Type="Library" URL="../NI-Switch Measurement UI/NI-Switch Control Relay UI.lvlib"/>
 		<Item Name="NI-Switch Control Relay.lvlib" Type="Library" URL="../NI-Switch Measurement/NI-Switch Control Relay.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
@@ -162,6 +163,47 @@
 				<Property Name="TgtF_productName" Type="Str">NI-Switch Measurement</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{A8492DAE-503C-4B42-8D2B-C4C410AE874C}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">NI-SwitchMeasurement.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="NI-Switch Measurement UI" Type="Packed Library">
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{E8DD8E7B-01FC-4545-8902-D030D0F84B09}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../NI-Switch Measurement/BuiltUI</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{36EABA4C-164C-4476-8114-5E1A10CBA3A2}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">NI-Switch Measurement UI.lvlibp</Property>
+				<Property Name="Destination[0].path" Type="Path">../NI-Switch Measurement/BuiltUI/NI-Switch Measurement UI.lvlibp</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../NI-Switch Measurement/BuiltUI</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
+				<Property Name="Source[0].itemID" Type="Str">{19354954-C970-438E-A0AF-B085DE7933CE}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NI-Switch Control Relay UI.lvlib</Property>
+				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.atomicCopy" Type="Bool">true</Property>
+				<Property Name="Source[1].Library.LVLIBPtopLevel" Type="Bool">true</Property>
+				<Property Name="Source[1].preventRename" Type="Bool">true</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">Library</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">National Instruments Corporation</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="TgtF_internalName" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2025 National Instruments Corporation</Property>
+				<Property Name="TgtF_productName" Type="Str">NI-Switch Measurement UI</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{1C610721-87FF-4D61-80CF-59C7AB369B01}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">NI-Switch Measurement UI.lvlibp</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
