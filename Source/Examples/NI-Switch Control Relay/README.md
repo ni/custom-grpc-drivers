@@ -24,9 +24,9 @@ driver (e.g. PXI-2567).
 
 ## Required Software
 
-- InstrumentStudio 2025 Q1 or later
-- TestStand 2024 Q4 or later
-- NI-SWITCH driver 2024 Q4 or later
+- InstrumentStudio 2024 Q4 or later
+- TestStand 2023 Q4 or later
+- NI-SWITCH driver 2023 Q4 or later
 - custom_grpc_ni_switch_driver 1.0.0.2 or later
 
 ## Required Hardware
