@@ -1,10 +1,10 @@
 # NI-DAQmx Measurement
 
-This is a measurement plug-in example that demonstrates how to measure a finite single frequency sample an NI DAQmx.
+This is a measurement plug-in example that demonstrates how to measure a finite single frequency sample using an NI DAQmx (e.g. PXIe-6621).
 
 Specify values for Maximum and Minimum Measurement Time, CI Frequency Measurement Time and Read Timeout. The measured single frequency sample value will be displayed in the Data indicator.
 
-### Features
+## Features
 
 - Uses the custom gRPC NI-DAQmx LabVIEW API
 - Pin-aware, supporting one task and one pin
@@ -16,11 +16,14 @@ Specify values for Maximum and Minimum Measurement Time, CI Frequency Measuremen
 - Uses the NI gRPC Device Server to allow sharing instrument tasks with other
   measurement services when running measurements from TestStand
 
-### Required Driver Software
+## Required Software
 
+- [InstrumentStudio 2025 Q1](https://www.ni.com/en/support/downloads/software-products/download.instrumentstudio.html#558605) or later
+- [TestStand 2023 Q4 or later](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#494502)
 - [NI-DAQmx 2023 Q1 or later](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html#477807)
+- [custom_grpc_ni_daqmx_driver 1.0.0.1]() or later
 
-### Required Hardware
+## Required Hardware
 
 This example requires an NI DAQmx that is supported by NI-DAQmx (e.g. PXIe-6612).
 
