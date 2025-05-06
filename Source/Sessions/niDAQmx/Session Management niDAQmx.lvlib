@@ -26,6 +26,7 @@
 	<Item Name="Get Connections - 1Pin 1Conn.vi" Type="VI" URL="../Get Connections - 1Pin 1Conn.vi"/>
 	<Item Name="Get Connections - 1Pin MConn.vi" Type="VI" URL="../Get Connections - 1Pin MConn.vi"/>
 	<Item Name="Get Connections - NPin MConn.vi" Type="VI" URL="../Get Connections - NPin MConn.vi"/>
-	<Item Name="NI DAQmx Property.mnu" Type="Document" URL="../NI DAQmx Property.mnu"/>
 	<Item Name="NI DAQmx gRPC.mnu" Type="Document" URL="../NI DAQmx gRPC.mnu"/>
+	<Item Name="NI DAQmx Task Property.mnu" Type="Document" URL="../NI DAQmx Task Property.mnu"/>
+	<Item Name="NI DAQmx Channel Property.mnu" Type="Document" URL="../NI DAQmx Channel Property.mnu"/>
 </Library>
