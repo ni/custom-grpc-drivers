@@ -187,7 +187,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{ED9EBF40-4D48-4B1D-8EA4-165C7487987A}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{F934A12D-77D6-43C5-A7D4-52AA05FDF42B}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NI-Switch Control Relay UI.lvlib</Property>
