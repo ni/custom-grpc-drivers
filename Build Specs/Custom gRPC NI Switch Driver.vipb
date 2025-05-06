@@ -114,24 +114,6 @@
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
       <Destination_Overrides>
-        <Path>Sessions</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>Shared/Palette Files/Measurement</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>true</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
-        <Path>Sessions/niSwitch</Path>
-        <Destination>0</Destination>
-        <Additional_Destination>false</Additional_Destination>
-        <Additional_Destination_Index>0</Additional_Destination_Index>
-      </Destination_Overrides>
-      <Destination_Overrides>
         <Path>Examples/NI-Switch Control Relay</Path>
         <Destination>1</Destination>
         <Additional_Destination>false</Additional_Destination>
@@ -159,21 +141,6 @@
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Exclusions>
-        <Path>NI Switch Executive</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Shared/Imports</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Sessions/niSwitch/NI Switch gRPC Client.lvproj</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Protos</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Shared/Palette Files/Measurement/Custom gRPC Driver Clients.mnu</Path>
-      </Exclusions>
       <Exclusions>
         <Path>.github</Path>
       </Exclusions>
