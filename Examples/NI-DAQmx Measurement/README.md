@@ -22,7 +22,7 @@ Specify values for Maximum and Minimum Measurement Time, CI Frequency Measuremen
 - [TestStand 2023 Q4](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#494502) or later
 - [NI-DAQmx 2024 Q3.1](https://www.ni.com/en/support/downloads/drivers/download.ni-daq-mx.html#547031) or later
 - [Measurement Plug-Ins SDK v.3.1.0.6](https://github.com/ni/measurement-plugin-labview/releases/tag/v3.1.0.6) or later
-- [custom_grpc_ni_daqmx_driver 1.0.0.1]() or later
+- [custom_grpc_ni_daqmx_driver 1.0.0.1](https://github.com/ni/custom-grpc-drivers/releases) or later
 
 ## Required Hardware
 
