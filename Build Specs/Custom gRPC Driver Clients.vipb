@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-02 12:07:05" Modified_Date="2025-05-02 12:12:22" Creator="vasenthi" Comments="" ID="8cc0f26d2850c6b997bc4ec845ef61cd">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-02 12:07:05" Modified_Date="2025-05-06 06:58:22" Creator="vasenthi" Comments="" ID="6a5f3449332cce8c5cf38b1f46eb8290">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_driver_clients</Package_File_Name>
     <Library_Version>1.0.0.1</Library_Version>
@@ -27,8 +27,8 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>Custom gRPC Driver Clients.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>Provides the common palette required for all custom gRPC driver client palettes.</One_Line_Description_Summary>
-      <Description>This package installs the common parent palette 'Custom gRPC Driver Clients' required for all the custom gRPC driver client palettes.</Description>
+      <One_Line_Description_Summary>Provides the parent palette for all the custom gRPC driver client palettes.</One_Line_Description_Summary>
+      <Description>This package installs the parent palette 'Custom gRPC Driver Clients' required for all the custom gRPC driver client palettes.</Description>
       <Copyright/>
       <Packager>NI</Packager>
       <URL>https://github.com/ni/custom-grpc-drivers</URL>
@@ -130,7 +130,7 @@
         <Path/>
       </Place_Folder_Contents>
     </Source_Files>
-    <License_Agreement_Filepath>..\..\custom-grpc-drivers\LICENSE</License_Agreement_Filepath>
+    <License_Agreement_Filepath>..\LICENSE</License_Agreement_Filepath>
     <Licensing_and_Activation>
       <License_LF_file_path/>
       <Licensed_library_file_path/>
