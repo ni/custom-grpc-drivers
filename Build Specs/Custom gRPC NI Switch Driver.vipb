@@ -1,9 +1,9 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-04-23 16:37:18" Modified_Date="2025-05-05 08:52:45" Creator="lvadmin" Comments="" ID="23adee1b60235a3d5483fddd8979d2eb">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-04-23 16:37:18" Modified_Date="2025-05-06 07:24:12" Creator="lvadmin" Comments="" ID="9735a115a98018980ad95cbb9b236408">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_switch_driver</Package_File_Name>
     <Library_Version>1.0.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
-    <Library_Source_Folder>..\Source</Library_Source_Folder>
+    <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\Build Output</Library_Output_Folder>
     <Company_Name>NI</Company_Name>
     <Library_Summary/>
@@ -33,7 +33,7 @@
     </Custom_Action_VIs>
     <VI_Package_Configuration_File>Custom gRPC NI Switch Driver.vipc</VI_Package_Configuration_File>
     <Description>
-      <One_Line_Description_Summary>Provides libraries required for session management in NI Switch driver APIs.</One_Line_Description_Summary>
+      <One_Line_Description_Summary>Provides APIs required for Session management in NI Switch.</One_Line_Description_Summary>
       <Description>This package provides libraries and APIs that facilitate session sharing for NI Switch Driver. The APIs can be found under the "Measurement I/O -&gt; Custom gRPC Driver Clients -&gt; NI Switch gRPC" category on the functions palette.</Description>
       <Copyright/>
       <Packager>NI</Packager>
@@ -137,6 +137,18 @@
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Source/Sessions/niSwitch</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Source/Shared/Palette Files/Measurement</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -161,6 +173,45 @@
       </Exclusions>
       <Exclusions>
         <Path>Shared/Palette Files/Measurement/Custom gRPC Driver Clients.mnu</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>.github</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Build Output</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Build Specs</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Docs</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>CONTRIBUTING.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>LICENSE</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>README.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>SECURITY.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/NI Switch Executive</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Protos</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Sessions/niSwitch/NI Switch gRPC Client.lvproj</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Shared/Imports</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Shared/Palette Files/Measurement/Custom gRPC Driver Clients.mnu</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
