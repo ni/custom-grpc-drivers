@@ -19,8 +19,8 @@ driver (e.g. PXI-2567).
     sections of the main sequence. For **Test UUTs** and batch process model use
     cases, these steps should be moved to the `ProcessSetup` and
     `ProcessCleanup` callbacks.
-- Uses the NI gRPC Device Server to allow sharing instrument sessions with other
-  measurement services when running measurements from TestStand.
+- Uses the NI gRPC Device Server to enable sharing of instrument sessions with
+  other measurement services when running measurements from TestStand.
 
 ## Required Software
 
@@ -33,8 +33,8 @@ driver (e.g. PXI-2567).
 
 This example requires an NI relay driver (e.g. PXI-2567).
 
-To simulate an NI SCOPE in software: open `NI MAX`, right click `Devices and
-Interfaces` and select `Create New...`. Select `Simulated NI-DAQmx Device or
-Modular Instrument`and click `Finish`. Search for and select the device you want
-to simulate and click `OK`. Finally, click on the device and rename it to match
-the name in the pin map file (e.g. RelayDriver1).
+To simulate an NI relay driver in software: open `NI MAX`, right click `Devices
+and Interfaces` and select `Create New...`. Select `Simulated NI-DAQmx Device or
+Modular Instrument` and click `Finish`. Search for and select the device you
+want to simulate and click `OK`. Finally, click on the device and rename it to
+match the name in the pin map file (e.g. RelayDriver1).
