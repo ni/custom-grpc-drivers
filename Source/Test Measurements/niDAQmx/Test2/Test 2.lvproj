@@ -185,7 +185,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{B84FF289-2F6E-4380-9BFB-2F6F828237DF}</Property>
-				<Property Name="Bld_version.build" Type="Int">3</Property>
+				<Property Name="Bld_version.build" Type="Int">4</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NIDAQmxMeasurement UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../NIDAQmxMeasurement/BuiltUI/NIDAQmxMeasurement UI.lvlibp</Property>

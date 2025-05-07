@@ -166,7 +166,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{E86D1478-03E4-4108-AD3D-ED779D361F62}</Property>
-				<Property Name="Bld_version.build" Type="Int">5</Property>
+				<Property Name="Bld_version.build" Type="Int">6</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">DAQmxMeasurement1 UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../DAQmxMeasurement1/BuiltUI/DAQmxMeasurement1 UI.lvlibp</Property>
