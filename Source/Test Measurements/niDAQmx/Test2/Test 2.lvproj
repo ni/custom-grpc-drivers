@@ -80,12 +80,12 @@
 				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
+				<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Sessions/niDAQmx/Session Management niDAQmx.lvlib"/>
+				<Item Name="NI_DAQmx_client.lvlib" Type="Library" URL="/&lt;vilib&gt;/Plug-In SDKs/Sessions/niDAQmx/NI DAQmx Client/NI_DAQmx_client.lvlib"/>
 			</Item>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Session Management niDAQmx.lvlib" Type="Library" URL="../../../../Sessions/niDAQmx/Session Management niDAQmx.lvlib"/>
-			<Item Name="NI_DAQmx_client.lvlib" Type="Library" URL="../../../../Sessions/niDAQmx/NI DAQmx Client/NI_DAQmx_client.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="NIDAQmxMeasurement" Type="EXE">
