@@ -9,167 +9,292 @@
 
 </Property>
 	<Item Name="RPC Messages" Type="Folder">
-		<Item Name="nidevice_grpc_Session" Type="Folder">
-			<Item Name="nidevice_grpc_Session.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session.ctl"/>
-			<Item Name="nidevice_grpc_Session_session.lvclass" Type="LVClass" URL="../RPC Messages/nidevice_grpc_Session_session/nidevice_grpc_Session_session.lvclass"/>
-			<Item Name="FlatToRichnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/FlatToRichnidevice_grpc_Session.vi"/>
-			<Item Name="RichToFlatnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/RichToFlatnidevice_grpc_Session.vi"/>
-		</Item>
-		<Item Name="google_protobuf_Timestamp" Type="Folder">
-			<Item Name="google_protobuf_Timestamp.ctl" Type="VI" URL="../RPC Messages/google_protobuf_Timestamp.ctl"/>
-			<Item Name="FlatToRichgoogle_protobuf_Timestamp.vi" Type="VI" URL="../RPC Messages/FlatToRichgoogle_protobuf_Timestamp.vi"/>
-			<Item Name="RichToFlatgoogle_protobuf_Timestamp.vi" Type="VI" URL="../RPC Messages/RichToFlatgoogle_protobuf_Timestamp.vi"/>
-		</Item>
 		<Item Name="nidaqmx_grpc_CreateTaskRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateTaskRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskRequest.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateTaskRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateTaskRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateTaskResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateTaskResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateTaskResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateTaskResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateDOChanRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateDOChanRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum/nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateDOChanRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateDOChanRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateDOChanRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateDOChanRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateDOChanRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateDOChanRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateDOChanRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateDOChanRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateDOChanResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateDOChanResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateDOChanResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateDOChanResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateDOChanResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateDOChanResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateDOChanResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateDOChanResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateDOChanResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateDOChanResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_units_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest_units_enum/nidaqmx_grpc_CreateCIFreqChanRequest_units_enum.lvclass"/>
 			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum/nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum.lvclass"/>
 			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum/nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateCIFreqChanRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateCIFreqChanRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateCIFreqChanRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateCIFreqChanRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateCIFreqChanRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateCIFreqChanRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateCIFreqChanRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateCIFreqChanRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateCIFreqChanResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_CreateCIFreqChanResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CreateCIFreqChanResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateCIFreqChanResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CreateCIFreqChanResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateCIFreqChanResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CreateCIFreqChanResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CreateCIFreqChanResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CreateCIFreqChanResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CreateCIFreqChanResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum/nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_WriteDigitalLinesRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_WriteDigitalLinesRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_WriteDigitalLinesRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_WriteDigitalLinesRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_WriteDigitalLinesRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_WriteDigitalLinesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_WriteDigitalLinesRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_WriteDigitalLinesRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_WriteDigitalLinesResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_WriteDigitalLinesResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_WriteDigitalLinesResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_WriteDigitalLinesResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_WriteDigitalLinesResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_WriteDigitalLinesResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_WriteDigitalLinesResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_WriteDigitalLinesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_WriteDigitalLinesResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_WriteDigitalLinesResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ReadCounterScalarF64Request" Type="Folder">
 			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Request.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Request.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_ReadCounterScalarF64Request.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ReadCounterScalarF64Request.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_ReadCounterScalarF64Request.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ReadCounterScalarF64Request.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_ReadCounterScalarF64Request.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ReadCounterScalarF64Request.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_ReadCounterScalarF64Request.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ReadCounterScalarF64Request.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ReadCounterScalarF64Response" Type="Folder">
 			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Response.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Response.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_ReadCounterScalarF64Response.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ReadCounterScalarF64Response.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_ReadCounterScalarF64Response.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ReadCounterScalarF64Response.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_ReadCounterScalarF64Response.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ReadCounterScalarF64Response.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_ReadCounterScalarF64Response.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ReadCounterScalarF64Response.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum/nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CfgImplicitTimingRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CfgImplicitTimingRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CfgImplicitTimingRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CfgImplicitTimingRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CfgImplicitTimingRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CfgImplicitTimingRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CfgImplicitTimingRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CfgImplicitTimingRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CfgImplicitTimingResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_CfgImplicitTimingResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_CfgImplicitTimingResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CfgImplicitTimingResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_CfgImplicitTimingResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CfgImplicitTimingResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_CfgImplicitTimingResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_CfgImplicitTimingResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_CfgImplicitTimingResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_CfgImplicitTimingResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StartTaskRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_StartTaskRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskRequest.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_StartTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StartTaskRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_StartTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StartTaskRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_StartTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StartTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_StartTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StartTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StartTaskResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_StartTaskResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_StartTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StartTaskResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_StartTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StartTaskResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_StartTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StartTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_StartTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StartTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StopTaskRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_StopTaskRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskRequest.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_StopTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StopTaskRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_StopTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StopTaskRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_StopTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StopTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_StopTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StopTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StopTaskResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_StopTaskResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_StopTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StopTaskResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_StopTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StopTaskResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_StopTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_StopTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_StopTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_StopTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ClearTaskRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_ClearTaskRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskRequest.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_ClearTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ClearTaskRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_ClearTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ClearTaskRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_ClearTaskRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ClearTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_ClearTaskRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ClearTaskRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ClearTaskResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_ClearTaskResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_ClearTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ClearTaskResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_ClearTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ClearTaskResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_ClearTaskResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_ClearTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_ClearTaskResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_ClearTaskResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum/nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetTaskAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetTaskAttributeStringRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetTaskAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetTaskAttributeStringRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetTaskAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetTaskAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetTaskAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetTaskAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetTaskAttributeStringResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetTaskAttributeStringResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetTaskAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetTaskAttributeStringResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetTaskAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetTaskAttributeStringResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetTaskAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetTaskAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetTaskAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetTaskAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum/nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeStringRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeStringRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeStringResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetChanAttributeStringResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeStringResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeStringResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum/nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeDoubleRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeDoubleRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeDoubleRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeDoubleRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeDoubleResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeDoubleResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeDoubleResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_GetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_GetChanAttributeDoubleResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_GetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_GetChanAttributeDoubleResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum/nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeStringRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeStringRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeStringRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeStringRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeStringResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_SetChanAttributeStringResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeStringResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeStringResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeStringResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeStringResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest" Type="Folder">
 			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleRequest.ctl"/>
 			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum.lvclass" Type="LVClass" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum/nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum.lvclass"/>
-			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeDoubleRequest.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeDoubleRequest.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeDoubleRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeDoubleRequest.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeDoubleRequest.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeDoubleResponse" Type="Folder">
 			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleResponse.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleResponse.ctl"/>
-			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeDoubleResponse.vi"/>
-			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeDoubleResponse.vi"/>
+			<Item Name="FlatToRichnidaqmx_grpc_SetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/FlatToRichnidaqmx_grpc_SetChanAttributeDoubleResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidaqmx_grpc_SetChanAttributeDoubleResponse.vi" Type="VI" URL="../RPC Messages/RichToFlatnidaqmx_grpc_SetChanAttributeDoubleResponse.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_Session" Type="Folder">
+			<Item Name="nidevice_grpc_Session.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session.ctl"/>
+			<Item Name="nidevice_grpc_Session_session.lvclass" Type="LVClass" URL="../RPC Messages/nidevice_grpc_Session_session/nidevice_grpc_Session_session.lvclass"/>
+			<Item Name="FlatToRichnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/FlatToRichnidevice_grpc_Session.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatnidevice_grpc_Session.vi" Type="VI" URL="../RPC Messages/RichToFlatnidevice_grpc_Session.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="google_protobuf_Timestamp" Type="Folder">
+			<Item Name="google_protobuf_Timestamp.ctl" Type="VI" URL="../RPC Messages/google_protobuf_Timestamp.ctl"/>
+			<Item Name="FlatToRichgoogle_protobuf_Timestamp.vi" Type="VI" URL="../RPC Messages/FlatToRichgoogle_protobuf_Timestamp.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+			<Item Name="RichToFlatgoogle_protobuf_Timestamp.vi" Type="VI" URL="../RPC Messages/RichToFlatgoogle_protobuf_Timestamp.vi">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_SessionInitializationBehavior" Type="Folder">
+			<Item Name="nidevice_grpc_SessionInitializationBehavior.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior.ctl"/>
+			<Item Name="Get Value for nidevice_grpc_SessionInitializationBehavior.vi" Type="VI" URL="../RPC Messages/Get Value for nidevice_grpc_SessionInitializationBehavior.vi"/>
+			<Item Name="Get nidevice_grpc_SessionInitializationBehavior for Value.vi" Type="VI" URL="../RPC Messages/Get nidevice_grpc_SessionInitializationBehavior for Value.vi"/>
 		</Item>
 		<Item Name="nidaqmx_grpc_LineGrouping" Type="Folder">
 			<Item Name="nidaqmx_grpc_LineGrouping.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_LineGrouping.ctl"/>
@@ -216,100 +341,160 @@
 			<Item Name="Get Value for nidaqmx_grpc_ChannelDoubleAttribute.vi" Type="VI" URL="../RPC Messages/Get Value for nidaqmx_grpc_ChannelDoubleAttribute.vi"/>
 			<Item Name="Get nidaqmx_grpc_ChannelDoubleAttribute for Value.vi" Type="VI" URL="../RPC Messages/Get nidaqmx_grpc_ChannelDoubleAttribute for Value.vi"/>
 		</Item>
-		<Item Name="nidevice_grpc_SessionInitializationBehavior" Type="Folder">
-			<Item Name="nidevice_grpc_SessionInitializationBehavior.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior.ctl"/>
-			<Item Name="Get Value for nidevice_grpc_SessionInitializationBehavior.vi" Type="VI" URL="../RPC Messages/Get Value for nidevice_grpc_SessionInitializationBehavior.vi"/>
-			<Item Name="Get nidevice_grpc_SessionInitializationBehavior for Value.vi" Type="VI" URL="../RPC Messages/Get nidevice_grpc_SessionInitializationBehavior for Value.vi"/>
-		</Item>
-		<Item Name="nidevice_grpc_Session_Flat" Type="Folder">
-			<Item Name="nidevice_grpc_Session_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session_Flat.ctl"/>
-		</Item>
-		<Item Name="google_protobuf_Timestamp_Flat" Type="Folder">
-			<Item Name="google_protobuf_Timestamp_Flat.ctl" Type="VI" URL="../RPC Messages/google_protobuf_Timestamp_Flat.ctl"/>
-		</Item>
 		<Item Name="nidaqmx_grpc_CreateTaskRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateTaskResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateTaskResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateDOChanRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateDOChanRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateDOChanRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateDOChanResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateDOChanResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateDOChanResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateDOChanResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateCIFreqChanRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CreateCIFreqChanResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CreateCIFreqChanResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CreateCIFreqChanResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CreateCIFreqChanResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_WriteDigitalLinesRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_WriteDigitalLinesResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_WriteDigitalLinesResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_WriteDigitalLinesResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_WriteDigitalLinesResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ReadCounterScalarF64Request_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Request_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Request_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Request_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Request_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ReadCounterScalarF64Response_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Response_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Response_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_ReadCounterScalarF64Response_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ReadCounterScalarF64Response_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CfgImplicitTimingRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_CfgImplicitTimingResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_CfgImplicitTimingResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_CfgImplicitTimingResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_CfgImplicitTimingResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StartTaskRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_StartTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_StartTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StartTaskResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_StartTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_StartTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StartTaskResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StopTaskRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_StopTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_StopTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_StopTaskResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_StopTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_StopTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_StopTaskResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ClearTaskRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_ClearTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_ClearTaskRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_ClearTaskResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_ClearTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_ClearTaskResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_ClearTaskResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetTaskAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetTaskAttributeStringResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetTaskAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetTaskAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetTaskAttributeStringResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetChanAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeStringResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetChanAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetChanAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeStringResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_GetChanAttributeDoubleResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_GetChanAttributeDoubleResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_GetChanAttributeDoubleResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_SetChanAttributeStringRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeStringResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_SetChanAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_SetChanAttributeStringResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeStringResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleRequest_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleRequest_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleRequest_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
 		</Item>
 		<Item Name="nidaqmx_grpc_SetChanAttributeDoubleResponse_Flat" Type="Folder">
-			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleResponse_Flat.ctl"/>
+			<Item Name="nidaqmx_grpc_SetChanAttributeDoubleResponse_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_SetChanAttributeDoubleResponse_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_Session_Flat" Type="Folder">
+			<Item Name="nidevice_grpc_Session_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_Session_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="google_protobuf_Timestamp_Flat" Type="Folder">
+			<Item Name="google_protobuf_Timestamp_Flat.ctl" Type="VI" URL="../RPC Messages/google_protobuf_Timestamp_Flat.ctl">
+				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+			</Item>
+		</Item>
+		<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat" Type="Folder">
+			<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior_Flat.ctl"/>
+			<Item Name="Get Value for nidevice_grpc_SessionInitializationBehavior_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for nidevice_grpc_SessionInitializationBehavior_Flat.vi"/>
+			<Item Name="Get nidevice_grpc_SessionInitializationBehavior_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get nidevice_grpc_SessionInitializationBehavior_Flat for Value.vi"/>
 		</Item>
 		<Item Name="nidaqmx_grpc_LineGrouping_Flat" Type="Folder">
 			<Item Name="nidaqmx_grpc_LineGrouping_Flat.ctl" Type="VI" URL="../RPC Messages/nidaqmx_grpc_LineGrouping_Flat.ctl"/>
@@ -356,12 +541,9 @@
 			<Item Name="Get Value for nidaqmx_grpc_ChannelDoubleAttribute_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for nidaqmx_grpc_ChannelDoubleAttribute_Flat.vi"/>
 			<Item Name="Get nidaqmx_grpc_ChannelDoubleAttribute_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get nidaqmx_grpc_ChannelDoubleAttribute_Flat for Value.vi"/>
 		</Item>
-		<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat" Type="Folder">
-			<Item Name="nidevice_grpc_SessionInitializationBehavior_Flat.ctl" Type="VI" URL="../RPC Messages/nidevice_grpc_SessionInitializationBehavior_Flat.ctl"/>
-			<Item Name="Get Value for nidevice_grpc_SessionInitializationBehavior_Flat.vi" Type="VI" URL="../RPC Messages/Get Value for nidevice_grpc_SessionInitializationBehavior_Flat.vi"/>
-			<Item Name="Get nidevice_grpc_SessionInitializationBehavior_Flat for Value.vi" Type="VI" URL="../RPC Messages/Get nidevice_grpc_SessionInitializationBehavior_Flat for Value.vi"/>
+		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi">
+			<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 		</Item>
-		<Item Name="Register gRPC Messages.vi" Type="VI" URL="../RPC Messages/Register gRPC Messages.vi"/>
 	</Item>
 	<Item Name="RPC Service" Type="Folder">
 		<Item Name="NiDAQmx" Type="Folder">
