@@ -1,11 +1,11 @@
-# Contributing to \<reponame\> 
+# Contributing to Custom gRPC Drivers
 
-Contributions to \<reponame\> are welcome from all!
+Contributions to Custom gRPC Drivers are welcome from all!
 
-\<reponame\> is managed via [git](https://git-scm.com), with the canonical upstream
-repository hosted on [GitHub](https://github.com/ni/<reponame>/).
+Custom gRPC Drivers is managed via [git](https://git-scm.com), with the canonical upstream
+repository hosted on [GitHub](https://github.com/ni/custom-grpc-drivers).
 
-\<reponame\> follows a pull-request model for development.  If you wish to
+Custom gRPC Drivers follows a pull-request model for development.  If you wish to
 contribute, you will need to create a GitHub account, fork this project, push a
 branch with your changes to your project, and then submit a pull request.
 
@@ -21,11 +21,34 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 
 # Getting Started
 
-- TODO: include build steps here.
+This repo contains source code, package build specifications for building the source into VI packages, and examples showing how to write and run measurement plug-ins with custom gRPC drivers.
 
-# Testing
+The source code can be found under the `Source` directory. The package definition files (.vipb) can be found under the `Build Specs` directory. The example code can be found under the `Examples` directory.
 
-- TODO: include testing steps here.
+## Building the LabVIEW Packages
+
+The source code is built into five LabVIEW packages
+
+* `custom_grpc_ni_driver_clients`
+* `custom_grpc_ni_switch_driver`
+
+To build the packages:
+
+1. Open the desired VIPM specification file (.vipb) under the [`Build Specs`](https://github.com/ni/custom-grpc-drivers/tree/main/Build%20Specs) folder
+2. Open the Specification file using VIPM 2023 or later
+3. Click Build - A .vip will be created in the `Build Output` folder under the repo root directory
+
+## `custom_grpc_ni_driver_clients` Package
+
+The `custom_grpc_ni_driver_clients` package contains the common LabVIEW menu (.mnu) files required for deploying the custom gRPC driver wrappers in the LabVIEW Functions palette.
+
+## `custom_grpc_ni_switch_driver` Package
+
+The `custom_grpc_ni_switch_driver` package contains the libraries needed for NI-Switch custom gRPC driver.
+
+## Examples
+
+This repo contains example measurement services that show how to use the custom gRPC Drive API with NI hardware. For additional details on examples, please refer to the [example documentation](Examples/README.md).
 
 # Developer Certificate of Origin (DCO)
 
@@ -57,5 +80,5 @@ See [GitHub's official documentation](https://help.github.com/articles/using-pul
 
 (taken from [developercertificate.org](https://developercertificate.org/))
 
-See [LICENSE](https://github.com/ni/<reponame>/blob/main/LICENSE)
-for details about how \<reponame\> is licensed.
+See [LICENSE](https://github.com/ni/custom-grpc-drivers/blob/main/LICENSE)
+for details about how Custom gRPC Drivers is licensed.
