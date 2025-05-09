@@ -27,7 +27,7 @@ The source code can be found under the `Source` directory. The package definitio
 
 ## Building the LabVIEW Packages
 
-The source code is built into five LabVIEW packages
+The source code is built into two LabVIEW packages
 
 * `custom_grpc_ni_driver_clients`
 * `custom_grpc_ni_switch_driver`
