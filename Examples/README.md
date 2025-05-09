@@ -3,6 +3,7 @@
 This directory contains the following example measurements:
 
 - `NI-Switch Control Relay`: Demonstrates the controlling of relays using an NI relay driver (e.g. PXI-2567).
+- `NI-DAQmx Measurement`: Demonstrates how to measure a finite single frequency sample using an NI DAQmx (e.g. PXIe-6621).
 
 For more details about a specific example, see the `README.md` file included
 with the example.

@@ -31,6 +31,7 @@ The source code is built into two LabVIEW packages
 
 * `custom_grpc_ni_driver_clients`
 * `custom_grpc_ni_switch_driver`
+* `custom_grpc_ni_daqmx_driver`
 
 To build the packages:
 
@@ -45,6 +46,10 @@ The `custom_grpc_ni_driver_clients` package contains the common LabVIEW menu (.m
 ## `custom_grpc_ni_switch_driver` Package
 
 The `custom_grpc_ni_switch_driver` package contains the libraries needed for NI-Switch custom gRPC driver.
+
+## `custom_grpc_ni_daqmx_driver` Package
+
+The `custom_grpc_ni_daqmx_driver` package contains the libraries needed for NI-DAQmx custom gRPC driver.
 
 ## Examples
 
