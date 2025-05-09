@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-06 16:39:45" Creator="alakshmi" Comments="" ID="3cf26ee9ae3a302edc041044922ac20f">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-08 19:23:43" Creator="alakshmi" Comments="" ID="75296295d6640b8cc2b4f1c6075d1b77">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_daqmx_driver</Package_File_Name>
-    <Library_Version>1.0.0.1</Library_Version>
+    <Library_Version>1.0.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\Build Output</Library_Output_Folder>
@@ -12,7 +12,7 @@
     <Community_Edition>true</Community_Edition>
     <Package_Icon>00000D7E002800000C9A00000400000200020022002200080000000000FFFFFF00FF80000000FFFFFFFFFFFF0000FFFFFFFFCCCC0000FFFFFFFF99990000FFFFFFFF66660000FFFFFFFF33330000FFFFFFFF00000000FFFFCCCCFFFF0000FFFFCCCCCCCC0000FFFFCCCC99990000FFFFCCCC66660000FFFFCCCC33330000FFFFCCCC00000000FFFF9999FFFF0000FFFF9999CCCC0000FFFF999999990000FFFF999966660000FFFF999933330000FFFF999900000000FFFF6666FFFF0000FFFF6666CCCC0000FFFF666699990000FFFF666666660000FFFF666633330000FFFF666600000000FFFF3333FFFF0000FFFF3333CCCC0000FFFF333399990000FFFF333366660000FFFF333333330000FFFF333300000000FFFF0000FFFF0000FFFF0000CCCC0000FFFF000099990000FFFF000066660000FFFF000033330000FFFF000000000000CCCCFFFFFFFF0000CCCCFFFFCCCC0000CCCCFFFF99990000CCCCFFFF66660000CCCCFFFF33330000CCCCFFFF00000000CCCCCCCCFFFF0000CCCCCCCCCCCC0000CCCCCCCC99990000CCCCCCCC66660000CCCCCCCC33330000CCCCCCCC00000000CCCC9999FFFF0000CCCC9999CCCC0000CCCC999999990000CCCC999966660000CCCC999933330000CCCC999900000000CCCC6666FFFF0000CCCC6666CCCC0000CCCC666699990000CCCC666666660000CCCC666633330000CCCC666600000000CCCC3333FFFF0000CCCC3333CCCC0000CCCC333399990000CCCC333366660000CCCC333333330000CCCC333300000000CCCC0000FFFF0000CCCC0000CCCC0000CCCC000099990000CCCC000066660000CCCC000033330000CCCC0000000000009999FFFFFFFF00009999FFFFCCCC00009999FFFF999900009999FFFF666600009999FFFF333300009999FFFF000000009999CCCCFFFF00009999CCCCCCCC00009999CCCC999900009999CCCC666600009999CCCC333300009999CCCC0000000099999999FFFF000099999999CCCC0000999999999999000099999999666600009999999933330000999999990000000099996666FFFF000099996666CCCC0000999966669999000099996666666600009999666633330000999966660000000099993333FFFF000099993333CCCC0000999933339999000099993333666600009999333333330000999933330000000099990000FFFF000099990000CCCC000099990000999900009999000066660000999900003333000099990000000000006666FFFFFFFF00006666FFFFCCCC00006666FFFF999900006666FFFF666600006666FFFF333300006666FFFF000000006666CCCCFFFF00006666CCCCCCCC00006666CCCC999900006666CCCC666600006666CCCC333300006666CCCC0000000066669999FFFF000066669999CCCC0000666699999999000066669999666600006666999933330000666699990000000066666666FFFF000066666666CCCC0000666666669999000066666666666600006666666633330000666666660000000066663333FFFF000066663333CCCC0000666633339999000066663333666600006666333333330000666633330000000066660000FFFF000066660000CCCC000066660000999900006666000066660000666600003333000066660000000000003333FFFFFFFF00003333FFFFCCCC00003333FFFF999900003333FFFF666600003333FFFF333300003333FFFF000000003333CCCCFFFF00003333CCCCCCCC00003333CCCC999900003333CCCC666600003333CCCC333300003333CCCC0000000033339999FFFF000033339999CCCC0000333399999999000033339999666600003333999933330000333399990000000033336666FFFF000033336666CCCC0000333366669999000033336666666600003333666633330000333366660000000033333333FFFF000033333333CCCC0000333333339999000033333333666600003333333333330000333333330000000033330000FFFF000033330000CCCC000033330000999900003333000066660000333300003333000033330000000000000000FFFFFFFF00000000FFFFCCCC00000000FFFF999900000000FFFF666600000000FFFF333300000000FFFF000000000000CCCCFFFF00000000CCCCCCCC00000000CCCC999900000000CCCC666600000000CCCC333300000000CCCC0000000000009999FFFF000000009999CCCC0000000099999999000000009999666600000000999933330000000099990000000000006666FFFF000000006666CCCC0000000066669999000000006666666600000000666633330000000066660000000000003333FFFF000000003333CCCC0000000033339999000000003333666600000000333333330000000033330000000000000000FFFF000000000000CCCC0000000000009999000000000000666600000000000033330000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000000000000000EEEE000000000000DDDD000000000000BBBB000000000000AAAA0000000000008888000000000000777700000000000055550000000000004444000000000000222200000000000011110000EEEEEEEEEEEE0000DDDDDDDDDDDD0000BBBBBBBBBBBB0000AAAAAAAAAAAA00008888888888880000777777777777000055555555555500004444444444440000222222222222000011111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FF000000000000000000FF0000000000000000000000000000000000000000FF0000FF00FF0000FFFF00FFFF0000FF0000FFFF00FFFF000000000000000000FF0000FF00FF00FFFF0000FF0000FF00FF00FF00FF00FF000000000000000000FF0000FF00FF000000FF00FF0000FF00FF00FF00FF00FF00000000000000000000FF0000FFFF00FFFF000000FF0000FF0000FF00FF00FF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FF0000FFFF0000FFFF000000FF000000000000000000000000000000000000FF00FF00FF00FF00FF00FF00FF00000000000000000000000000000000000000FFFFFF00FFFF0000FFFF0000FF000000000000000000000000000000000000000000FF00FF00FF00FF000000FF00000000000000000000000000000000000000FFFF0000FF00FF00FF00000000FF0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000FF00FFFFFF000000FFFF000000FFFF00000000000000000000000000000000000000FF0000FF0000FFFF0000FF0000FF000000000000000000000000FFFF0000FF00FF0000FF00FF0000FF00FF0000FF00FFFFFFFF0000FF00FF0000FF00FF00FF00FF0000FF00FFFFFFFF00FF00FF0000FF00FF00FF0000FF000000FF00FF00FF00FFFFFF0000FF0000FF0000FF00FF00FF00FF00FF00FF00FF000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A8F8F2A2A8F2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A8F2A8F2A8F2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A8F2A8F2A8F2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A8F2A8F2A8F2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A8F2A8F2A8F2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A000000000200800004A6C9B004AC9D5004A29D50026C4950000000000000000000000000002662000077740000766400001544000065420000000000000000000000000005C6300001E6780065EF7BCA55EF72A455C92AAA000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF002900000012000000020000000D01000000000100000000000A000000080000000000240024002900000012000000020000000D00FAFAFA00010000000000100000001000000002002300000000000000000023002900000012000000020000000D00FFFFFF00010000000000100000001000000002002200010001000100010022002900000012000000020000000D00FAFAFA00010000000000100000001000000002000000240024002400240000002900000012000000020000000D00F8F8F800010000000000100000001000000002000100230023002300230001</Package_Icon>
     <Product_Name>Custom gRPC NI DAQmx Driver</Product_Name>
-    <Was_Built>false</Was_Built>
+    <Was_Built>true</Was_Built>
     <Target>LabVIEW</Target>
   </Library_General_Settings>
   <Advanced_Settings>
@@ -168,6 +168,9 @@
       <Exclusions>
         <Path>Source/Shared/Imports</Path>
       </Exclusions>
+      <Exclusions>
+        <Path>Source/Shared/Palette Files</Path>
+      </Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
@@ -299,7 +302,7 @@
         <Path>..\Source</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>33AE132E9DAB835407F86D3E75562E43</GUID>
+      <GUID>29FE46AFA3C28795D4A34073DB3984F4</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -348,7 +351,7 @@
         <Path>Install Custom Actions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8148259EF2F61C1983ECC1333EB1831A</GUID>
+      <GUID>056AAA2E90B812049309A083EB0A4CB5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -383,7 +386,7 @@
         <Path>..\Examples\NI-DAQmx Measurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>296D2467349EA24FDAC14EAAD0A79ADE</GUID>
+      <GUID>D24BEE949F809BD65E3074538C97E26D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -418,7 +421,7 @@
         <Path>..\Source\Sessions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E6E9EC46D02FC186CA184226E4C09D8F</GUID>
+      <GUID>83990F37F620E31C7C330BA88B8BB786</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -481,7 +484,7 @@
         <Path>Build Custom Actions\Pre-Build Custom Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4250CF0829E158DB8F8F2BB1F70E3ABB</GUID>
+      <GUID>897AE897710D01096297CEB15EC456A3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -516,7 +519,7 @@
         <Path>Install Custom Actions\Post-Install Custom Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A8A5C386292272549F9A6B54A607240F</GUID>
+      <GUID>39D4DF85C2012EB326FBCF9195659E29</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -565,7 +568,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement UI</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FE88BBB972D6549A3CCA11505196AB84</GUID>
+      <GUID>A923040637A3957791DC2436468D58A6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -712,7 +715,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Run Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>873DE93AAA4D3F9F6524B20C4A9BFE12</GUID>
+      <GUID>072B4124C6B2F00D4FDAE20D6579FCB1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -747,7 +750,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement UI\Measurement UI.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F8B0A0E53D51B9ACA687194F5855F17A</GUID>
+      <GUID>D5836576DC9DA1D95567B617703340CB</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -824,7 +827,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Advanced\Unpack for gRPC.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A1F73271F3A2F2BDFB688E655D05D267</GUID>
+      <GUID>877D2AEF8D3A87C94240EC384C6226E3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -873,7 +876,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\SubVIs\NIDAQmx Logic.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1548C42843EF78C7C5E310D7FAFBB01F</GUID>
+      <GUID>6861772F7EC1C80A6AE6BCA71928F1E9</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -922,7 +925,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\TestStand Code Modules\Unregister and Close Tasks.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>51F7543EDA905B6CB5ED46FAC371EF0F</GUID>
+      <GUID>2E19F8D7ED474DD0F9FC1CF56451F33F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -957,7 +960,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Advanced\Build Assets\Post-Build Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9F18C26EECC506110DAC5136A0E2DB70</GUID>
+      <GUID>0044D5BB7A9EF6893B125184449517AA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -992,7 +995,7 @@
         <Path>..\Source\Sessions\niDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>421E0997A7CFB260952859787B2643E4</GUID>
+      <GUID>7762E0973AAAE1C7C7086CA4E96AB01D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>13</Parent_Palette_Index>
@@ -1153,7 +1156,7 @@
         <Path>..\Source\Sessions\niDAQmx\Instrument Type ID.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>10BF98879B309198B41D4B564838A285</GUID>
+      <GUID>04DD028ED5E467014555C33005FC61F8</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>14</Parent_Palette_Index>
@@ -1230,7 +1233,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\gRPC Client Test.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5D1696AA456E91DFAF89C87DC88C5517</GUID>
+      <GUID>134F92940E3F1911D4E361035E1C31D0</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>14</Parent_Palette_Index>
@@ -1279,7 +1282,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A55069E5049E65ADAA33A22CA0D44B5F</GUID>
+      <GUID>83A4E4E443C19BCE4BA29D07831C2EF6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -1328,7 +1331,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\Client API\Destroy Client.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>291099FFEB4A407431C51F76326DED32</GUID>
+      <GUID>84DD126F5088325B48B5A34A3D31F5C3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -2931,7 +2934,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\RichToFlatnidevice_grpc_Session.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>982FA16619D75A38AE9D4BB6FC4E4594</GUID>
+      <GUID>3F83AF1B85F823819E76CEF4A58EB9A7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -2966,7 +2969,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Service\NiDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>10BD0ECD180FB1AEA16AFA7E49DE60A7</GUID>
+      <GUID>F28845C69A9867130429C0E60E93B1C3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3004,34 +3007,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\GetFieldFromProtobufIndexnidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Getsample_mode.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3055,20 +3030,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\Getsample_mode_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\GetTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3102,20 +3063,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\HasTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Setsample_mode.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3141,21 +3088,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\Setsample_mode_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>096049AFCF18E786A584B44D02A2044D</GUID>
+      <GUID>3B280AFC069980546E3A539F1BCE1D5D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3221,48 +3154,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_edge_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_edge_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasedge.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3286,20 +3177,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\Hasedge_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3330,21 +3207,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\Setedge_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>B6B68B345366F363D0BAA1E80A55D916</GUID>
+      <GUID>AC2AD8BE67883B6D3E2EE7D463622057</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3382,34 +3245,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Getmeas_method.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3433,20 +3268,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\Getmeas_method_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\GetTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3480,20 +3301,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\HasTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Setmeas_method.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3519,21 +3326,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\Setmeas_method_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>430554E5202B2A74E82538099A56C593</GUID>
+      <GUID>DA760E760ADD29A665E440A058F89C93</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3571,48 +3364,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_units_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\GetFieldFromProtobufIndexnidaqmx_grpc_CreateCIFreqChanRequest_units_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Getunits.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3636,20 +3387,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\Getunits_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>1</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3683,20 +3420,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Setunits.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3722,7 +3445,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\Setunits_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>71B2CDEBFC05A2518F26BABDCFA664EC</GUID>
+      <GUID>1C2C805FC62FA56E085508CB2DD77A1D</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3760,34 +3483,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_CreateDOChanRequest_line_grouping_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\GetFieldFromProtobufIndexnidaqmx_grpc_CreateDOChanRequest_line_grouping_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Getline_grouping.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3811,20 +3506,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\Getline_grouping_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\GetTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -3858,20 +3539,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\HasTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Setline_grouping.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -3897,21 +3564,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\Setline_grouping_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>FDA8A893932E2CF3D09AC29A0A0D12BD</GUID>
+      <GUID>2B38FB20885BB7B2596F7344341031CC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3977,48 +3630,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\GetFieldFromProtobufIndexnidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasattribute.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4042,20 +3653,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\Hasattribute_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -4086,21 +3683,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>F2687502EEFB5834293CCF7B9A04348E</GUID>
+      <GUID>B0A036760EFD84AD2B8D009D362FCE25</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4166,48 +3749,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndexnidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasattribute.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4231,20 +3772,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\Hasattribute_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -4275,21 +3802,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>C42AB9A17E603E6A44991D88D9B6CAA1</GUID>
+      <GUID>180C255F374336B6DC9512CEEC5E0FA6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4355,48 +3868,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndexnidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasattribute.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4420,20 +3891,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\Hasattribute_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -4464,21 +3921,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>826EEEEC5E44FA44AA3A909FAAF02151</GUID>
+      <GUID>6DE14F88565C8744856A606F98CAAE4A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4544,48 +3987,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\GetFieldFromProtobufIndexnidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasattribute.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4609,20 +4010,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\Hasattribute_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -4653,21 +4040,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>B35421EB320815996F49483275CA328B</GUID>
+      <GUID>E1B023C89FC78A7D759C1250155CB2C7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4733,48 +4106,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\GetFieldFromProtobufIndexnidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasattribute.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4798,20 +4129,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\Hasattribute_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -4842,21 +4159,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>9DA2340AAC2647F37E387125B11618C0</GUID>
+      <GUID>8F40F4A37E5AE57D78BD225904F883FA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4922,48 +4225,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>4</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>5</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\GetFieldFromProtobufIndexnidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\GetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Hasdata_layout.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -4987,20 +4248,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\Hasdata_layout_raw.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\HasTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -5031,21 +4278,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\Setdata_layout_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>9CF72E40581BFA9F9BC940FD4787B3A1</GUID>
+      <GUID>434D8958B1ED20E1C7B53A85AE74F776</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -5083,34 +4316,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndex.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\GetFieldFromProtobufIndex.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetFieldFromProtobufIndexnidevice_grpc_Session_session.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\GetFieldFromProtobufIndexnidevice_grpc_Session_session.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Getid.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -5134,20 +4339,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\Getname.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>GetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\GetTemplate.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -5181,20 +4372,6 @@
       <Items_Data>
         <Type>Item</Type>
         <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>HasTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>3</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\HasTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
         <NameSub_Menu_Name>Setid.vi</NameSub_Menu_Name>
         <Short_Name/>
         <is_Merge_VI>false</is_Merge_VI>
@@ -5220,21 +4397,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\Setname.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>SetTemplate.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>2</Row>
-          <Column>6</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\SetTemplate.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <GUID>9A9FAD47029FA3A99AD90EE9D1D071EC</GUID>
+      <GUID>4302CAF4F73521F5BCD3FA35AFF93F26</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>19</Parent_Palette_Index>
@@ -5451,7 +4614,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Service\NiDAQmx\NiDAQmx WriteDigitalLines.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>BBD8EB617AEE5EA8A5AF21174AC41944</GUID>
+      <GUID>5F9E3F8EC19BEED2D70A1FF59E73D0D5</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>16</Parent_Palette_Index>
@@ -5710,7 +4873,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions\niDAQmx Write (Digital Bool 1Line 1Point).vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>790B22BE915B8D9613F8F01AF88C7451</GUID>
+      <GUID>1DC6819FBF9953B324FE9F14E37FD044</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>16</Parent_Palette_Index>
@@ -5743,20 +4906,6 @@
         </Position>
         <Icon>00000000</Icon>
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods\Close MeasurementLink Session.vi</Path>
-        <VI_Title/>
-      </Items_Data>
-      <Items_Data>
-        <Type>Item</Type>
-        <Sub_Palette_Index>-1</Sub_Palette_Index>
-        <NameSub_Menu_Name>Create.vi</NameSub_Menu_Name>
-        <Short_Name/>
-        <is_Merge_VI>false</is_Merge_VI>
-        <Position>
-          <Row>1</Row>
-          <Column>2</Column>
-        </Position>
-        <Icon>00000000</Icon>
-        <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods\Create.vi</Path>
         <VI_Title/>
       </Items_Data>
       <Items_Data>
@@ -5815,7 +4964,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods\Map Initialization Behaviour.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9FB67CE40696840101E0C131E1117111</GUID>
+      <GUID>EB6BF61AF23C3338DF5760113B8B647A</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -5864,7 +5013,7 @@
         <Path>..\Source</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AA83229E4FDF3BCA8AC41FF3610DA262</GUID>
+      <GUID>7BF0A231D625E3C152C2DB27710D1572</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -5899,7 +5048,7 @@
         <Path>..\Examples\NI-DAQmx Measurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0820FB1ACB336BED0D5A42F0DA272806</GUID>
+      <GUID>A8ABCE6897665FF0C70EE514099C7891</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -5934,7 +5083,7 @@
         <Path>..\Source\Sessions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>14C77D3B4EAE15B6051AC03DC7C5D9E9</GUID>
+      <GUID>8D49D7B605FB2FB3F38DAFC2395C72A5</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -5969,7 +5118,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D54D812C471739E6786E773618A2523C</GUID>
+      <GUID>0E6CC2AF4CD7D483647CEBCB7669D7D8</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -6018,7 +5167,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Measurement Results.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>33EF9F24247E1F001B46B10FCA3A6E82</GUID>
+      <GUID>A234B0BE87D465AB99E9237D9B3F5F80</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -6053,7 +5202,7 @@
         <Path>..\Source\Sessions\niDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DAB58766EB3EE49C667E294ACF79ED62</GUID>
+      <GUID>408C13DC3A47DE36BB9941B5C438618B</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -6116,7 +5265,7 @@
         <Path>..\Source\Sessions\niDAQmx\Connection with Session.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3A94C3C3095FDC625491F3E283F823CA</GUID>
+      <GUID>7216884D372BA9272AE68095F1677A7B</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -6151,7 +5300,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>FE549333913369C79E528701827AD8A7</GUID>
+      <GUID>1E861B9371C9424923233CB79763BAC4</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -6186,7 +5335,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>9476997E3C6AE6BE97835924E663D272</GUID>
+      <GUID>EF092246BD5B646D2C9CF602A73B45E6</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -7327,7 +6476,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_SessionInitializationBehavior_Flat.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A13ACCE6F3E0437BE353B3F5EE3A62ED</GUID>
+      <GUID>22972199CBC2A3C4797FB1BFB808AEE2</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -7362,7 +6511,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions\niDAQmx gRPC Device Server.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>004C8A177F95ACA361663F5F943152ED</GUID>
+      <GUID>33724AE8309315741BC8F1DEFE1FCE1F</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
