@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-08 19:23:43" Creator="alakshmi" Comments="" ID="75296295d6640b8cc2b4f1c6075d1b77">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-09 13:21:11" Creator="alakshmi" Comments="" ID="04810fbad26a179829c7baec6a2b3f60">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_daqmx_driver</Package_File_Name>
     <Library_Version>1.0.0.2</Library_Version>
@@ -125,6 +125,12 @@
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Source/Shared/Palette Files/Measurement</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>true</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -167,9 +173,6 @@
       </Exclusions>
       <Exclusions>
         <Path>Source/Shared/Imports</Path>
-      </Exclusions>
-      <Exclusions>
-        <Path>Source/Shared/Palette Files</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
@@ -302,7 +305,7 @@
         <Path>..\Source</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>29FE46AFA3C28795D4A34073DB3984F4</GUID>
+      <GUID>F7385B8DEECDE4750E31381E684F20CA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -351,7 +354,7 @@
         <Path>Install Custom Actions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>056AAA2E90B812049309A083EB0A4CB5</GUID>
+      <GUID>E7BB1B008BEB20340DBB59C61759928C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -386,7 +389,7 @@
         <Path>..\Examples\NI-DAQmx Measurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D24BEE949F809BD65E3074538C97E26D</GUID>
+      <GUID>4D3FD05CD5EB025ADBA3A01E3FCE313A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -421,7 +424,7 @@
         <Path>..\Source\Sessions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>83990F37F620E31C7C330BA88B8BB786</GUID>
+      <GUID>3A6A9C12C63573DEC127C89E9850FF27</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -484,7 +487,7 @@
         <Path>Build Custom Actions\Pre-Build Custom Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>897AE897710D01096297CEB15EC456A3</GUID>
+      <GUID>5BB012A31FB73F5F9DA41D451F5AAC69</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -519,7 +522,7 @@
         <Path>Install Custom Actions\Post-Install Custom Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>39D4DF85C2012EB326FBCF9195659E29</GUID>
+      <GUID>E8B3982C7F4B250354A0FB30F5347C24</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -568,7 +571,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement UI</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A923040637A3957791DC2436468D58A6</GUID>
+      <GUID>3D275C1C6AC035CFE7493C9D0DA5F340</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -715,7 +718,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Run Service.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>072B4124C6B2F00D4FDAE20D6579FCB1</GUID>
+      <GUID>A2B415858F5A83F4979BB32F68B45BF1</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -750,7 +753,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement UI\Measurement UI.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>D5836576DC9DA1D95567B617703340CB</GUID>
+      <GUID>245D1A6118BB86EE786783FBBAC2FF28</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -827,7 +830,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Advanced\Unpack for gRPC.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>877D2AEF8D3A87C94240EC384C6226E3</GUID>
+      <GUID>F4929717955684AEA739B4101E1748AC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -876,7 +879,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\SubVIs\NIDAQmx Logic.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6861772F7EC1C80A6AE6BCA71928F1E9</GUID>
+      <GUID>3C48421CF15C76AC7E062C731BC0292E</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -925,7 +928,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\TestStand Code Modules\Unregister and Close Tasks.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2E19F8D7ED474DD0F9FC1CF56451F33F</GUID>
+      <GUID>DB5C6A01F15EEDDE9DAFC7F33499DF9F</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>9</Parent_Palette_Index>
@@ -960,7 +963,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Advanced\Build Assets\Post-Build Action.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0044D5BB7A9EF6893B125184449517AA</GUID>
+      <GUID>1BB3EED4848134A8E15D3AFC41726A30</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -995,7 +998,7 @@
         <Path>..\Source\Sessions\niDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7762E0973AAAE1C7C7086CA4E96AB01D</GUID>
+      <GUID>7211AD12C9259A563484644F08FD8F85</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>13</Parent_Palette_Index>
@@ -1156,7 +1159,7 @@
         <Path>..\Source\Sessions\niDAQmx\Instrument Type ID.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>04DD028ED5E467014555C33005FC61F8</GUID>
+      <GUID>C70F1FC66D641D64085E331E75904C36</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>14</Parent_Palette_Index>
@@ -1233,7 +1236,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\gRPC Client Test.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>134F92940E3F1911D4E361035E1C31D0</GUID>
+      <GUID>D8B40C9FDE9D6DF9B95E28489F16046A</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>14</Parent_Palette_Index>
@@ -1282,7 +1285,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>83A4E4E443C19BCE4BA29D07831C2EF6</GUID>
+      <GUID>B5C61A805705D15DF36A00AD00495DB3</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -1331,7 +1334,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\Client API\Destroy Client.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>84DD126F5088325B48B5A34A3D31F5C3</GUID>
+      <GUID>A01ADA9746560B1FCC0A514493A1AC61</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -2934,7 +2937,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\RichToFlatnidevice_grpc_Session.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3F83AF1B85F823819E76CEF4A58EB9A7</GUID>
+      <GUID>DFF04B613906728183A352AB0CBBE3DF</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>15</Parent_Palette_Index>
@@ -2969,7 +2972,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Service\NiDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>F28845C69A9867130429C0E60E93B1C3</GUID>
+      <GUID>A750C1DB4FA79B256F6996034B7078AC</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3088,7 +3091,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CfgImplicitTimingRequest_sample_mode_enum\Setsample_mode_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>3B280AFC069980546E3A539F1BCE1D5D</GUID>
+      <GUID>324D2AB2E9F6CF9097F0D0FCFF72AFB6</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3207,7 +3210,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_edge_enum\Setedge_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>AC2AD8BE67883B6D3E2EE7D463622057</GUID>
+      <GUID>4ACCC2C9603FE3A7FFED521162B38360</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3326,7 +3329,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_meas_method_enum\Setmeas_method_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>DA760E760ADD29A665E440A058F89C93</GUID>
+      <GUID>1EB20F08D8C95448C79A99352806C93C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3445,7 +3448,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateCIFreqChanRequest_units_enum\Setunits_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1C2C805FC62FA56E085508CB2DD77A1D</GUID>
+      <GUID>C732E3D7E31831B9D57345912DF952B7</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3564,7 +3567,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_CreateDOChanRequest_line_grouping_enum\Setline_grouping_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2B38FB20885BB7B2596F7344341031CC</GUID>
+      <GUID>573984070CF12D1DAE8CF2A1FC943D89</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3683,7 +3686,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeDoubleRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>B0A036760EFD84AD2B8D009D362FCE25</GUID>
+      <GUID>0912782AC93EFF14D49C07E80246F392</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3802,7 +3805,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetChanAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>180C255F374336B6DC9512CEEC5E0FA6</GUID>
+      <GUID>F74A64239FE6D52578957EC90BE6E355</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -3921,7 +3924,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_GetTaskAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>6DE14F88565C8744856A606F98CAAE4A</GUID>
+      <GUID>9EB3941AA93F8F9C9A5BBC7F3818D564</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4040,7 +4043,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeDoubleRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>E1B023C89FC78A7D759C1250155CB2C7</GUID>
+      <GUID>185E8CC580B18BB145540826DA6DC9DA</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4159,7 +4162,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_SetChanAttributeStringRequest_attribute_enum\Setattribute_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8F40F4A37E5AE57D78BD225904F883FA</GUID>
+      <GUID>84C4D01C2AB67AEE38E91E405640C830</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4278,7 +4281,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidaqmx_grpc_WriteDigitalLinesRequest_data_layout_enum\Setdata_layout_raw.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>434D8958B1ED20E1C7B53A85AE74F776</GUID>
+      <GUID>53B94A36FA81ED77F486B0A46ED188CD</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>18</Parent_Palette_Index>
@@ -4397,7 +4400,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_Session_session\Setname.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>4302CAF4F73521F5BCD3FA35AFF93F26</GUID>
+      <GUID>63C42FD7C112F213A48F5F20E39BCD8C</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>19</Parent_Palette_Index>
@@ -4614,7 +4617,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Service\NiDAQmx\NiDAQmx WriteDigitalLines.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>5F9E3F8EC19BEED2D70A1FF59E73D0D5</GUID>
+      <GUID>DFFD50A688CCD9EF577B584DD87A8F89</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>16</Parent_Palette_Index>
@@ -4873,7 +4876,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions\niDAQmx Write (Digital Bool 1Line 1Point).vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1DC6819FBF9953B324FE9F14E37FD044</GUID>
+      <GUID>C09228525F5E75BC0B6739890044B5ED</GUID>
     </Functions_Palette_Data>
     <Functions_Palette_Data>
       <Parent_Palette_Index>16</Parent_Palette_Index>
@@ -4964,7 +4967,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Session Factory Methods\Map Initialization Behaviour.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EB6BF61AF23C3338DF5760113B8B647A</GUID>
+      <GUID>568CEFFB37C08980B48E6E803A710C74</GUID>
     </Functions_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>-1</Parent_Palette_Index>
@@ -5013,7 +5016,7 @@
         <Path>..\Source</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7BF0A231D625E3C152C2DB27710D1572</GUID>
+      <GUID>534B4AFE017ACCF2000B579D4A5592DF</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -5048,7 +5051,7 @@
         <Path>..\Examples\NI-DAQmx Measurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A8ABCE6897665FF0C70EE514099C7891</GUID>
+      <GUID>2506264D7DAB14FF64167CECCD33F7E3</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>0</Parent_Palette_Index>
@@ -5083,7 +5086,7 @@
         <Path>..\Source\Sessions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>8D49D7B605FB2FB3F38DAFC2395C72A5</GUID>
+      <GUID>DECFD62541C2558C535536BAF5455EF1</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>1</Parent_Palette_Index>
@@ -5118,7 +5121,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>0E6CC2AF4CD7D483647CEBCB7669D7D8</GUID>
+      <GUID>55E494A0DEB8F0E02C85553E07D44112</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>3</Parent_Palette_Index>
@@ -5167,7 +5170,7 @@
         <Path>..\Examples\NI-DAQmx Measurement\NIDAQmxMeasurement\Measurement Results.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>A234B0BE87D465AB99E9237D9B3F5F80</GUID>
+      <GUID>42C6B3D66FFBDCD71C155752AC22E0B0</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>2</Parent_Palette_Index>
@@ -5202,7 +5205,7 @@
         <Path>..\Source\Sessions\niDAQmx</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>408C13DC3A47DE36BB9941B5C438618B</GUID>
+      <GUID>D5D99986C9133BFDEEF64D7C93C14989</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>5</Parent_Palette_Index>
@@ -5265,7 +5268,7 @@
         <Path>..\Source\Sessions\niDAQmx\Connection with Session.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>7216884D372BA9272AE68095F1677A7B</GUID>
+      <GUID>989F6A3002A4E7C108CF9150E9592182</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -5300,7 +5303,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>1E861B9371C9424923233CB79763BAC4</GUID>
+      <GUID>DCFCC4755A11BEACEB72E2CF12185AFC</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>6</Parent_Palette_Index>
@@ -5335,7 +5338,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>EF092246BD5B646D2C9CF602A73B45E6</GUID>
+      <GUID>7A8F0E0335373F05B3DD01207F44B23D</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>7</Parent_Palette_Index>
@@ -6476,7 +6479,7 @@
         <Path>..\Source\Sessions\niDAQmx\NI DAQmx Client\RPC Messages\nidevice_grpc_SessionInitializationBehavior_Flat.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>22972199CBC2A3C4797FB1BFB808AEE2</GUID>
+      <GUID>DFE4D543970BECDA53FE754BE003BACD</GUID>
     </Controls_Palette_Data>
     <Controls_Palette_Data>
       <Parent_Palette_Index>8</Parent_Palette_Index>
@@ -6511,7 +6514,7 @@
         <Path>..\Source\Sessions\niDAQmx\Session Factory\Client Wrapper Functions\niDAQmx gRPC Device Server.ctl</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>33724AE8309315741BC8F1DEFE1FCE1F</GUID>
+      <GUID>40C1BCEADF37A9D9AA3BD7B32A9B0EBB</GUID>
     </Controls_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
