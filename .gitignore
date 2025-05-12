@@ -17,9 +17,7 @@
 .cache/
 .vs/
 
-# Builds
-/Build Output/
-BuiltUI/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
