@@ -7,7 +7,6 @@
   - [Workflow](#workflow)
   - [Using the Custom gRPC Drivers](#using-the-custom-grpc-drivers)
   - [Examples](#examples)
-  - [Note](#note)
 
 ---
 
@@ -54,6 +53,5 @@ The `Examples` directory contains example measurement services. See the [README.
 
 ---
 
-## Note
-
-For detailed information about the Custom gRPC Drivers available in this repository, please refer to the documentation located in the [Docs](Docs) directory.
+> [!NOTE]
+> For detailed information about the Custom gRPC Drivers available in this repository, please refer to the documentation located in the [Docs](Docs) directory.
