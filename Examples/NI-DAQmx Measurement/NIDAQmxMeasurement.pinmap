@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PinMap xmlns="http://www.ni.com/TestStand/SemiconductorModule/PinMap.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="1.9">
+	<Instruments>
+		<NIDAQmxTask name="NI-DAQmx" taskType="" channelList="PFI16/port0/line16/ctr5" useAsRelayDriver="false" />
+	</Instruments>
+	<Pins>
+		<DUTPin name="Pin1" />
+	</Pins>
+	<PinGroups></PinGroups>
+	<Sites>
+		<Site siteNumber="0" />
+	</Sites>
+	<Connections>
+		<Connection pin="Pin1" siteNumber="0" instrument="NI-DAQmx" channel="PFI16/port0/line16/ctr5" />
+	</Connections>
+</PinMap>
