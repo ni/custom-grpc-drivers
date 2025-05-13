@@ -175,7 +175,6 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{41567B7E-32BA-4DB6-A7A0-7DF51186983E}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">NISwitchMeasurement UI.lvlibp</Property>
 				<Property Name="Destination[0].path" Type="Path">../NISwitchMeasurement/BuiltUI/NISwitchMeasurement UI.lvlibp</Property>
@@ -187,7 +186,7 @@
 				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="PackedLib_callersAdapt" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{DDDA072E-037D-4E07-914A-D108C58E13E7}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{52B77E6A-C0CD-45D1-B429-E3B4C3EFE7C5}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/NISwitchControlRelay UI.lvlib</Property>
