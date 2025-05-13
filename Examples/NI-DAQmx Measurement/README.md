@@ -1,6 +1,6 @@
 # NI-DAQmx Measurement
 
-This is a measurement plug-in example that demonstrates how to measure a finite single frequency sample using an NI DAQmx (e.g. PXIe-6621).
+This is a measurement plug-in example that demonstrates how to measure a finite single frequency sample using an NI DAQmx (e.g. PXIe-6612).
 
 Specify values for Maximum and Minimum Measurement Time, CI Frequency Measurement Time and Read Timeout. The measured single frequency sample value will be displayed in the Data indicator.
 

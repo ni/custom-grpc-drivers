@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="0CE5DC95B7420AFED10B591069EE1594ECCE6E048E8687B7E5C6CEF4625A7348ED90EE30EB5B1406951106912C5E678352F1DA573D9F20196B0EAC7712E0D1EB" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="0E35B860409B67501FAAEA946DEC13BEF636B2270285324B8E2A12E168E1E008934E805C2CAFAD4A5787E7ADD4F7577CFF4186B2BB77F7E6028FDA502D6F4F6A" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
-		<ParsableNamespace AssemblyFileVersion="25.0.0.49535" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
-		<ParsableNamespace AssemblyFileVersion="9.15.0.49535" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
-		<ApplicationVersionInfo Build="25.0.0.49535" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="25.0.0.49535" />
+		<ParsableNamespace AssemblyFileVersion="24.8.0.49911" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
+		<ParsableNamespace AssemblyFileVersion="9.14.0.49911" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="24.8.0.49911" Name="InstrumentStudio" PersistenceVersion="22.1.0.0" Version="24.8.0.49911" />
 	</SourceModelFeatureSet>
 	<Project xmlns="http://www.ni.com/PlatformFramework">
 		<EnvoyManagerRootEnvoy Id="379a41a35c79436898f58c3aab89a10b" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
