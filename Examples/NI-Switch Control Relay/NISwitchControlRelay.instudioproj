@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SourceFile Checksum="DDC802972E02E50CF64955210A2AD82FF4BF91B4A4ED9E1D152964371D963694C2F4F2CD768056E65C6AA278CAA9932BA74F201494AB93EE6E1D96BD10B24C2C" xmlns="http://www.ni.com/PlatformFramework">
+<SourceFile Checksum="A60056F2E481BA86C61DCC44339E3F46D5C8A7705C28762E1F4EC31F76E8A77F76F3A828D66D942AEB1607E08E47A896FBBA45E1746F0DED42D90F96390A08D1" xmlns="http://www.ni.com/PlatformFramework">
 	<SourceModelFeatureSet>
 		<ParsableNamespace AssemblyFileVersion="25.0.0.49535" FeatureSetName="Pin Map" Name="http://www.ni.com/InstrumentFramework/PinMap" OldestCompatibleVersion="21.3.0.0" Version="21.3.0.0" />
 		<ParsableNamespace AssemblyFileVersion="9.15.0.49535" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
@@ -12,8 +12,8 @@
 		</EmbeddedDefinitionReference>
 		<NameScopingEnvoy Id="fc703b1e980d48ff89052501caa37cd9" ModelDefinitionType="DefaultTarget" Name="DefaultTarget">
 			<DefaultTarget />
-			<SourceFileReference Bindings="EnvoyManager" Id="2d808af124cd4da78f97bd785615fbf4" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="NI-Switch Control Relay.sfp" StoragePath="NI-Switch Control Relay.sfp" />
-			<FileReference Id="6a5610fd84264adea9e3c65befa370e1" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="NI-Switch Control Relay.pinmap" StoragePath="NI-Switch Control Relay.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
+			<SourceFileReference Bindings="EnvoyManager" Id="2d808af124cd4da78f97bd785615fbf4" ModelDefinitionType="NationalInstruments.InstrumentFramework.Document.SourceModel.UnifiedTask" Name="NISwitchControlRelay.sfp" StoragePath="NISwitchControlRelay.sfp" />
+			<FileReference Id="6a5610fd84264adea9e3c65befa370e1" ModelDefinitionType="{http://www.ni.com/InstrumentFramework/PinMap}PinMapDefinition" Name="NISwitchControlRelay.pinmap" StoragePath="NISwitchControlRelay.pinmap" p4:IsActive="True" xmlns:p4="http://www.ni.com/InstrumentFramework/PinMap" />
 		</NameScopingEnvoy>
 	</Project>
 	<ProjectInformation xmlns="http://www.ni.com/PlatformFramework">
