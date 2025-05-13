@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-12 22:26:18" Creator="alakshmi" Comments="" ID="5e8aa30cae9be2ad4bb68cf2ae2cdf01">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-13 12:34:45" Creator="alakshmi" Comments="" ID="4cab1f45a0835d8d5830aecefb421757">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_daqmx_driver</Package_File_Name>
-    <Library_Version>1.0.0.1</Library_Version>
+    <Library_Version>1.0.0.2</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\Build Output</Library_Output_Folder>
@@ -170,6 +170,24 @@
       </Exclusions>
       <Exclusions>
         <Path>Source/Shared/Palette Files/Measurement/Custom gRPC Driver Clients.mnu</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Build Output</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Docs</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Examples/NI-Switch Control Relay</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Examples/README.md</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Sessions/niSwitch</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>.gitignore</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>
