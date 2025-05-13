@@ -15,10 +15,8 @@ with the example.
 To run the example measurement, follow these steps
 
 1. Open the LabVIEW project (.lvproj) file for the example.
-2. For examples that use a packed library for the LabVIEW UI, you must first
-   build the packed library build specification.
-3. Open and Run the following VI to run the measurement service: `Run
-   Service.vi`
+2. Each example includes a packed library for the LabVIEW UI. If you make any changes to `Measurement UI.vi`, rebuild the packed library build specification.
+3. Open and Run the `Run Service.vi` VI to run the measurement service.
 4. For examples that use a pin map, the name of the device in NI MAX must match
    the name of the device in the pin map.
 5. For examples that have a TestStand sequence, the LabVIEW adapter
