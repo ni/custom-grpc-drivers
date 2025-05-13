@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-13 16:11:57" Creator="alakshmi" Comments="" ID="2851fc5e97337bdc523340f4a76834fc">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-13 16:55:53" Creator="alakshmi" Comments="" ID="db093b73b3caddb1694f7ad83a8c3855">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_daqmx_driver</Package_File_Name>
-    <Library_Version>1.0.0.2</Library_Version>
+    <Library_Version>1.0.0.1</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>..\Build Output</Library_Output_Folder>
