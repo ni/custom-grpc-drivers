@@ -23,7 +23,7 @@ The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for 
     - [LabVIEW gRPC Library v1.3.0.1](https://www.vipm.io/package/ni_lib_labview_grpc_library/#1.3.0.1) or later
     - [LabVIEW gRPC Servicer v1.3.0.1](https://www.vipm.io/package/ni_lib_labview_grpc_servicer/#1.3.0.1) or later
     - [NI gRPC Types v1.0.0.1](https://www.vipm.io/package/ni_protobuf_types/#1.0.0.1) or later
-- [TestStand 2023 Q4](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#494502) or later
+- [TestStand 2021 SP1](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#445937) or later
 
 ---
 
