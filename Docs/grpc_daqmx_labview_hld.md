@@ -184,5 +184,5 @@ service NiDAQmx {
 
 ### DAQmx LabVIEW Client Deployment
 
-1. Deploy the gRPC DAQmx client VIs to the `Measurement I/O > Custom gRPC Driver Clients > NI DAQmx gRPC` section of the LabVIEW functions palette via a VI package. 
-2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI DAQmx gRPC Client` directory.
+1. Deploy the gRPC DAQmx client VIs to the `Measurement I/O > Custom gRPC Drivers > NI DAQmx gRPC` section of the LabVIEW functions palette via a VI package. 
+2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\vi.lib\Plug-In SDKs\Sessions\niDAQmx` directory.

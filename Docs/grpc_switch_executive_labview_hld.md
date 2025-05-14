@@ -228,5 +228,5 @@ service NiSwitchExecutive {
 
 ### Switch Executive LabVIEW Client Deployment
 
-1. Deploy the gRPC Switch Executive client VIs to the `Measurement I/O > Custom gRPC Driver Clients > NI Switch Executive gRPC` section of the LabVIEW functions palette via a VI package.
-2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\instr.lib\NI Switch Executive gRPC` directory.
+1. Deploy the gRPC Switch Executive client VIs to the `Measurement I/O > Custom gRPC Drivers > NI Switch Executive gRPC` section of the LabVIEW functions palette via a VI package.
+2. The VIs will be installed in the `C:\Program Files\National Instruments\LabVIEW <version>\vi.lib\Plug-In SDKs\Sessions\niSwitchExecutive` directory.
