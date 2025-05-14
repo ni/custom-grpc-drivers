@@ -25,7 +25,7 @@
       <Pre-Uninstall_VI/>
       <Post-Uninstall_VI/>
     </Custom_Action_VIs>
-    <VI_Package_Configuration_File>Custom gRPC Driver Clients.vipc</VI_Package_Configuration_File>
+    <VI_Package_Configuration_File>Custom gRPC Drivers.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Provides the parent palette for all the custom gRPC driver palettes.</One_Line_Description_Summary>
       <Description>This package installs the parent palette 'Custom gRPC Drivers' required for all the custom gRPC driver palettes.</Description>
