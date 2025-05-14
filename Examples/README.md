@@ -21,7 +21,7 @@ To run the example measurement, follow these steps
    the name of the device in the pin map.
 5. For examples that have a TestStand sequence, the LabVIEW adapter
 configuration must be set to use the LabVIEW development system. See the
-[TestStand help](https://www.ni.com/docs/en-US/bundle/teststand/page/tsref/infotopics/db_lvadapterconfig.htm) for more details.
+[TestStand help](https://www.ni.com/docs/en-US/bundle/teststand-api-reference/page/tsref/labview-adapter-configuration-dialog-box.html) for more details.
 
 ### Stop the Measurement Service
 
