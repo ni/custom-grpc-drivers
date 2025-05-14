@@ -42,7 +42,7 @@ The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for 
 ## Using the Custom gRPC Drivers
 
 1. Open the Block Diagram of your application (or) Create and save a new VI.
-2. Right-click on the Block Diagram and navigate to `Measurement I/O` → `Custom gRPC Driver Clients` to use the Custom gRPC Driver APIs.  
+2. Right-click on the Block Diagram and navigate to `Measurement I/O` → `Custom gRPC Drivers` to use the Custom gRPC Driver APIs.  
 ![Custom gRPC Driver Palette](Docs/Images/Custom%20gRPC%20Driver%20Palette.png)
 
 ---
