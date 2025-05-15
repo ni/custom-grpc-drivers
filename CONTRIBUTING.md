@@ -29,7 +29,7 @@ The source code can be found under the `Source` directory. The package definitio
 
 The source code is built into three LabVIEW packages
 
-* `custom_grpc_ni_driver_clients`
+* `custom_grpc_drivers`
 * `custom_grpc_ni_switch_driver`
 * `custom_grpc_ni_daqmx_driver`
 
@@ -39,9 +39,9 @@ To build the packages:
 2. Open the Specification file using VIPM 2023 or later
 3. Click Build - A .vip will be created in the `Build Output` folder under the repo root directory
 
-## `custom_grpc_ni_driver_clients` Package
+## `custom_grpc_drivers` Package
 
-The `custom_grpc_ni_driver_clients` package contains the common LabVIEW menu (.mnu) files required for deploying the custom gRPC driver wrappers in the LabVIEW Functions palette.
+The `custom_grpc_drivers` package contains the common LabVIEW menu (.mnu) files required for deploying the custom gRPC driver wrappers in the LabVIEW Functions palette.
 
 ## `custom_grpc_ni_switch_driver` Package
 

@@ -1,4 +1,4 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-13 16:55:53" Creator="alakshmi" Comments="" ID="db093b73b3caddb1694f7ad83a8c3855">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2025-05-06 15:46:51" Modified_Date="2025-05-14 08:55:43" Creator="lvadmin" Comments="" ID="35ff1c0b3fc863291bb4c24dfde7ce0d">
   <Library_General_Settings>
     <Package_File_Name>custom_grpc_ni_daqmx_driver</Package_File_Name>
     <Library_Version>1.0.0.1</Library_Version>
@@ -17,7 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <Additional_External_Dependencies>custom_grpc_driver_clients &gt;=1.0.0.1</Additional_External_Dependencies>
+      <Additional_External_Dependencies>custom_grpc_drivers &gt;=1.0.0.1</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_labview_grpc_library &gt;=1.3.0.1</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_lib_labview_grpc_servicer &gt;=1.3.0.1</Additional_External_Dependencies>
       <Additional_External_Dependencies>ni_measurement_plugin_sdk &gt;=3.1.0.6</Additional_External_Dependencies>
@@ -34,7 +34,7 @@
     <VI_Package_Configuration_File>Custom gRPC NI DAQmx Driver.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Provides APIs required for Session management in NI DAQmx.</One_Line_Description_Summary>
-      <Description>This package provides libraries and APIs that facilitate session sharing for NI DAQmx Driver. The APIs can be found under the "Measurement I/O -&gt; Custom gRPC Driver Clients -&gt; NI DAQmx gRPC" category on the functions palette.</Description>
+      <Description>This package provides libraries and APIs that facilitate session sharing for NI DAQmx Driver. The APIs can be found under the "Measurement I/O -&gt; Custom gRPC Drivers -&gt; NI DAQmx gRPC" category on the functions palette.</Description>
       <Copyright/>
       <Packager>NI</Packager>
       <URL>https://github.com/ni/custom-grpc-drivers</URL>
@@ -169,9 +169,6 @@
         <Path>Source/Shared/Imports</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Source/Shared/Palette Files/Measurement/Custom gRPC Driver Clients.mnu</Path>
-      </Exclusions>
-      <Exclusions>
         <Path>Build Output</Path>
       </Exclusions>
       <Exclusions>
@@ -190,7 +187,10 @@
         <Path>.gitignore</Path>
       </Exclusions>
       <Exclusions>
-        <Path>Source/Shared/Palette Files/Measurement/_Custom gRPC Driver Clients/readonly.txt</Path>
+        <Path>Source/Shared/Palette Files/Measurement/_Custom gRPC Drivers/readonly.txt</Path>
+      </Exclusions>
+      <Exclusions>
+        <Path>Source/Shared/Palette Files/Measurement/Custom gRPC Drivers.mnu</Path>
       </Exclusions>
       <Place_Folder_Contents>
         <Path/>

@@ -23,7 +23,7 @@ The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for 
     - [LabVIEW gRPC Library v1.3.0.1](https://www.vipm.io/package/ni_lib_labview_grpc_library/#1.3.0.1) or later
     - [LabVIEW gRPC Servicer v1.3.0.1](https://www.vipm.io/package/ni_lib_labview_grpc_servicer/#1.3.0.1) or later
     - [NI gRPC Types v1.0.0.1](https://www.vipm.io/package/ni_protobuf_types/#1.0.0.1) or later
-- [TestStand 2023 Q4](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#494502) or later
+- [TestStand 2021 SP1](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#445937) or later
 
 ---
 
@@ -42,7 +42,7 @@ The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for 
 ## Using the Custom gRPC Drivers
 
 1. Open the Block Diagram of your application (or) Create and save a new VI.
-2. Right-click on the Block Diagram and navigate to `Measurement I/O` → `Custom gRPC Driver Clients` to use the Custom gRPC Driver APIs.  
+2. Right-click on the Block Diagram and navigate to `Measurement I/O` → `Custom gRPC Drivers` to use the Custom gRPC Driver APIs.  
 ![Custom gRPC Driver Palette](Docs/Images/Custom%20gRPC%20Driver%20Palette.png)
 
 ---
