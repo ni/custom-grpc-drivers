@@ -12,7 +12,7 @@
 
 ## Introduction
 
-The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for NI-Switch and NI-DAQmx drivers in LabVIEW. These APIs facilitate efficient communication between LabVIEW applications and hardware devices using the gRPC protocol, enabling session sharing across LabVIEW Measurement Plug-ins.
+The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs in LabVIEW. These APIs facilitate efficient communication between LabVIEW applications and hardware devices using the gRPC protocol, enabling session sharing across LabVIEW Measurement Plug-ins.
 
 ## Software support
 
@@ -24,6 +24,45 @@ The Custom gRPC Drivers package offers NI gRPC Device Server interface APIs for 
     - [LabVIEW gRPC Servicer v1.3.0.1](https://www.vipm.io/package/ni_lib_labview_grpc_servicer/#1.3.0.1) or later
     - [NI gRPC Types v1.0.0.1](https://www.vipm.io/package/ni_protobuf_types/#1.0.0.1) or later
 - [TestStand 2021 SP1](https://www.ni.com/en/support/downloads/software-products/download.teststand.html#445937) or later
+
+---
+
+## Supported Instruments
+
+1. NI-Switch
+2. NI-DAQmx 
+
+## Supported APIs and Property Nodes
+
+### NI-Switch
+
+|#| **Function Name**             | 
+|-| ----------------------------- |
+|1| `Initialize With Topology.vi` | 
+|2| `Relay Control.vi`            | 
+|3| `Get Relay Position.vi`       | 
+|4| `Wait For Debounce.vi`        | 
+|5| `Close.vi`                    | 
+
+### NI-DAQmx
+
+|#| **Function Name**            
+|-| ----------------------------- 
+|1| `DAQmx Create Task.vi`
+|2| `DAQmx Create Channel (DO-Digital Output).vi`
+|3| `DAQmx Create Channel (CI-Frequency).vi `
+|4| `DAQmx Write (Digital Bool 1Line 1Point).vi` 
+|5| `DAQmx Read (Counter DBL 1Chan 1Samp).vi`     
+|6| `DAQmx Timing (Implicit).vi`             
+|7| `DAQmx Start Task.vi`                       
+|8| `DAQmx Stop Task.vi` 
+|9| `DAQmx Clear Task.vi`
+
+|#| **Property Node**            
+|-| ----------------------------- 
+|1| `DAQmx Task >> Name`
+|2|`DAQmx Channel >> Counter Input : Frequency : Input : Terminal`         
+|3| `DAQmx Channel >> Counter Input : Frequency : Measurement Specifications : High Frequency : Measurement Time` 
 
 ---
 
